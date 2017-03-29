@@ -117,9 +117,15 @@
                     <div class="col-lg-12">
                         <h3>Sponsors</h3>
                     </div>
+                     
                     <div class="col-lg-12">
                         <script src="http://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>"></script>
                     </div>
+                    <div class="col-lg-12 text-center">
+				        <p>
+				         <a target="_blank" class="btn btn-danger btn-lg" href="/home/howtosponsor">Sponsor a challenge today!</a>
+				        </p>
+                     </div> 
                 </div>
             </div>
         </section>

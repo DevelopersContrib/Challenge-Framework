@@ -41,9 +41,6 @@
     }
 </style>
 
-
-<!--------------------------------------------------------------------------------->
-
 <div style="position:relative;">
 	<div class="animated rotateIn r-d badge-postn">
 		<a alt="Contrib Brand" target="_blank" href="http://referrals.contrib.com/idevaffiliate.php?id=15959&url=http://www.contrib.com/signup/firststep?domain=<?php echo $info['domain']?>">
@@ -51,7 +48,6 @@
 		</a>
 	</div>
 </div>
-
 
 <div class="wrap-index2">
             <div class="container">
@@ -79,13 +75,14 @@
 								<form id="leadform">
 									<div class="input-group">
 										<input type="text" class="form-control input-lg" id="email" name="email" placeholder="Enter your email address">
-										<input type="hidden" id="refid" value="0">
+										<input type="text" class="form-control input-lg" id="secret" name="secret" value="" style="display:none;">
+                                        <input type="hidden" id="refid" value="0">
 										<input type="hidden" id="domain" value="<?php echo preg_replace("/www./","",$_SERVER['HTTP_HOST'])?>">
 										<input type="hidden" id="user_ip" value="<?php echo $_SERVER['REMOTE_ADDR']?>">
 										<span class="input-group-btn">
 											<button class="btn btn-danger btn-lg email-ftre inputBgCstm" id="submitLead">
 												<i class="fa fa-edit"></i>
-												Sign Up
+												Join Us
 											</button>
 										</span>
 									</div><!-- /input-group -->
@@ -142,18 +139,16 @@
                 </div>
             </div>
         </div>
-
-
-<!--------------------------------------------------------------------------------->
+<!--   -->
 <script>
 $(function() {
 var domain_name = $('#domain').val();
 
 	
-			getsocial(domain_name,'fb','http://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/1396251686_facebook_circle_color.png');
-			getsocial(domain_name,'twitter','http://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/1396251704_twitter_circle_color.png');
-			getsocial(domain_name,'gplus','http://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/gplus.png');
-			getsocial(domain_name,'linkedin','http://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/linkedin.png');
+			getsocial(domain_name,'fb','https://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/1396251686_facebook_circle_color.png');
+			getsocial(domain_name,'twitter','https://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/1396251704_twitter_circle_color.png');
+			getsocial(domain_name,'gplus','https://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/gplus.png');
+			getsocial(domain_name,'linkedin','https://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/social_icons/linkedin.png');
 			
 			
 			
@@ -171,6 +166,13 @@ function getsocial(domain_name,social,icon_src){
 								//do nothing
 							}else{
 								$('#socials_container').append('&nbsp;<a href="'+socialdata.profile_url+'"><img src="'+icon_src+'" height="40px"></a>&nbsp;');
+								if (socialdata.request_social=='twitter'){
+									 $('a.twitter').attr('href',socialdata.profile_url);
+								}else if (socialdata.request_social=='fb'){
+									 $('a.facebook').attr('href',socialdata.profile_url);
+								}else if (socialdata.request_social=='linkedin'){
+									 $('a.linkedin').attr('href',socialdata.profile_url);
+								}
 							}		
 			});
 		}

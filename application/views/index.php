@@ -2,6 +2,8 @@
 <?	include('index_lander.php');?>
 <script type="text/javascript">
 	$(document).ready(function(){
+		
+		
 		$('.wrap-feature').css({'min-height': (($(window).height()))+'px'});
 		$(window).resize(function(){
 			$('.wrap-feature').css({'min-height': (($(window).height()))+'px'});
@@ -22,6 +24,14 @@
                 }
             );
 		
+		
+		$('.challenge').click(function(){
+			$('.poprefer').show();
+		});
+		 
+		$('#fade').click(function(){
+			$('.poprefer').hide();
+		});
 	}); 
 </script>
 <script type="text/javascript" src="/js/jquery.newsTicker.js"></script>
@@ -56,11 +66,22 @@
         });
     });
 </script>
-
+<?  if ($featured_id != '0'):?>
 
 <section class="section-2">
 	<div class="container">
 		<?	include('index_main_content.php');?>
+    </div>
+</section>
+ 
+<?	
+   include('index_featured_details.php');
+?>
+
+<?endif?>
+
+<section class="section-2">
+    <div class="container">
 		<?	include('index_featured_challenges.php');?>
 	</div>
 </section>
@@ -74,6 +95,11 @@
 <section class="section-2">
 	<div class="container">
 		<?	include('index_featured_sites.php');?>
+	</div>
+</section>
+<section class="section-2">
+	<div class="container">
+		<?	include('index_verticals.php');?>
 	</div>
 </section>
 <?	include('index_footer.php');?>

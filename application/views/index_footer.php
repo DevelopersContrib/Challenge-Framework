@@ -1,57 +1,397 @@
-		<footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <ul class="list-inline ul-footer">
-                            <li>
-                                <a href="/home/about">About</a>
-                            </li>
-                            <li>
-                                <a href="/home/partners">Partners</a>
-                            </li>
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="http://www.contrib.com/home/signin">Login</a>
-                            </li>
-                            <li>
-                                <a href="http://referrals.contrib.com/idevaffiliate.php?id=15959&url=http://www.contrib.com/signup/firststep?domain=<?php echo $info['domain']?>">Register</a>
-                            </li>
-                            <li>
-                                <a href="/home/staffing">We're Hiring</a>
-                            </li>
-                            <li>
-                                <a href="#top" id="show_contactus_dialog" data-toggle="modal" data-target="#form-container">Contact us</a>
-                            </li>
-                        </ul>
-                        <ul class="list-inline ul-sub-footer">
-                            <li>
-                                &copy <?php echo date("Y"); ?> <?=ucwords($info['domain'])?>
-                            </li>
-                            <li>
-                                <a href="/home/policy">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="/home/terms">Terms and Conditions</a>
-                            </li>
-                            <li>
-                                <a href="/home/sitemap">Sitemap</a>
-                            </li>
-                            <li>
-                                <a href="/home/referral">Referral</a>
-                            </li>
-                        </ul>
-                    </div>
-                     <div class="col-lg-12 text-center">
-                         <?php echo $footer_banner?>
-                     </div>
-                </div>
-            </div>
+<?php global $footer_html?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://www.contrib.com/js/jquery.simplyscroll.min.js"></script>
+<script>
+			$(document).ready(function(){
+				$("#scrollerLogo").simplyScroll({
+					auto: true,
+					manualMode: 'loop',
+					speed: 1,
+					pauseOnHover: true
+				});
+			});
+</script>
+<style>
+.footer-dark-1 {
+    color: #FFF;
+    padding: 25px 0px 10px;
+    background-color: #333;
+}
+.footer-dark-1 h3 {
+	font-size: 18px;
+margin-top: 0px;
+margin-bottom: 15px;
+}
+.footer-dark-1 .fa {
+	font-size:30px;
+}
+.footer-dark-1 a {
+	color:#dedede;
+}
+.footer-dark-2 {
+    color: #FFF;
+    padding: 20px 0px 10px 0px;
+    background-color: #222;
+	margin-bottom:-20px;
+	font-size:12px;
+}
+.footer-dark-2 a {
+	color:#dedede;
+	font-size:12px;
+}
+/* Scrolling Image Partner */
+.scrollerHidden{
+    overflow: hidden;
+    position: relative;
+}
+#scrollerLogo li {
+    width: 200px;
+}
+#scrollerLogo li img {
+    max-height: 50px;
+}
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+    position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+    position: relative;
+    overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+.simply-scroll-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+    
+.simply-scroll-list li img {
+    border: none;
+    display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+    width: 100%;
+    height: 55px;
+    margin-bottom: 1em;
+    margin: auto;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+    height: 55px;
+}
+.wrap-scrolling-partner{
+	margin-bottom: 80px;
+	position: relative;
+}
+
+</style>
+<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="simply-scroll-clip">
+							<ul class="list-inline simply-scroll-list" id="scrollerLogo" style="4800px;">
+								<li>
+									<a target="_blank" title="applications.net" href="http://applications.net">
+										<img title="applications.com" alt="applications.net" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-applicatioins1.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="venturecamp.com" href="http://venturecamp.com">
+										<img title="venturecamp.com" alt="venturecamp.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-venture.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="handyman.com" href="http://handyman.com">
+										<img title="handyman.com" alt="handyman.com" src="https://s3.amazonaws.com/assets.zipsite.net/images/jayson/contrib/bg/logo-mono-handy-min.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="musicchallenge.com" href="http://musicchallenge.com">
+										<img title="musicchallenge.com" alt="musicchallenge.com" src="https://s3.amazonaws.com/assets.zipsite.net/images/jayson/contrib/bg/logo-mono-musicC-min.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="acting.com" href="http://acting.com">
+										<img title="acting.com" alt="acting.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-acting.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="virtualinterns.com" href="http://virtualinterns.com">
+										<img title="virtualinterns.com" alt="virtualinterns.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-virtualI.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="globalventures.com" href="http://globalventures.com">
+										<img title="globalventures.com" alt="globalventures.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-gv.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="ichallenge.com" href="http://ichallenge.com">
+										<img title="ichallenge.com" alt="ichallenge.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-Ichallenge.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="iconsultants.com" href="http://iconsultants.com">
+										<img title="iConsultants.com" alt="iconsultants.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-iConsultants.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="musicring.com" href="http://musicring.com">
+										<img title="musicring.com" alt="musicring.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-musicring.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="photostream.com" href="http://photostream.com">
+										<img title="photostream.com" alt="photostream.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-photo-stream.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="streamblog.com" href="http://streamblog.com">
+										<img title="streamblog.com" alt="streamblog.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-streamblog.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="applications.net" href="http://applications.net">
+										<img title="applications.net" alt="applications.net" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-applicatioins1.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="venturecamp.com" href="http://venturecamp.com">
+										<img title="venturecamp.com" alt="venturecamp.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-venture.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="handyman.com" href="http://handyman.com">
+										<img title="handyman.com" alt="handyman.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-handy.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="musicchallenge.com" href="http://musicchallenge.com">
+										<img title="musicchallenge.com" alt="musicchallenge.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-musicC.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="acting.com" href="http://acting.com">
+										<img title="acting.com" alt="acting.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-acting.png">
+									</a>
+								</li>
+								<li>
+									<a target="_blank" title="virtualinterns.com" href="http://virtualinterns.com">
+										<img title="virtualinterns.com" alt="virtualinterns.com" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-mono-virtualI.png">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        <footer>    
+           <div class="footer-dark-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3">
+									<h3 class="fnt-bold text-uppercase">
+										<a href="/home"><?=ucwords($info['domain'])?></a>
+									</h3>
+									<p>
+										<? if($info['description']!=''){
+										echo stripslashes(str_replace('\n','<br>',$info['description']));
+									}else{
+										echo 'Learn more about Joining our Partner Network.';
+								} ?>
+									</p>
+								</div>
+								<div class="col-md-3">
+									<h3 class="fnt-bold text-uppercase">
+										get started
+									</h3>
+									<ul class="list-unstyled f-a-links">
+										<li>
+											<a href="/home/partners" class="text-capitalize">
+												Partner with us
+											</a>
+										</li>
+										<li>
+											<a href="https://referrals.contrib.com/idevaffiliate.php?id=15959&url=http://www.contrib.com/signup/firststep?domain=<?php echo $info['domain']?>"  class="text-capitalize">Register</a>
+										</li>
+										<li>
+											<a href="/home/staffing" class="text-capitalize">
+												Apply now
+											</a>
+										</li>
+										<li>
+											<a href="/referral" class="text-capitalize">
+												referral
+											</a>
+										</li>
+										<li>
+											<a href="/home/fund" class="text-capitalize">
+												fund
+											</a>
+										</li>
+										<li>
+											<a href="/home/developers" class="text-capitalize">
+												developers
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-3">
+									<h3 class="fnt-bold text-uppercase">
+										company
+									</h3>
+									<ul class="list-unstyled f-a-links f-a-links-mrgBtm">
+										<li>
+											<a href="/home/about" class="text-capitalize">
+												About us
+											</a>
+										</li>
+										<li>
+											<a href="/home/terms" class="text-capitalize">
+												Terms
+											</a>
+										</li>
+										<li>
+											<a href="/home/policy" class="text-capitalize">
+												Policy
+											</a>
+										</li>
+										<li>
+											<a href="#top" id="show_contactus_dialog" data-toggle="modal" data-target="#form-container" class="text-capitalize">Contact us</a>
+										</li>
+										<li>
+											<a href="/home/apps" class="text-capitalize">
+												Apps
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-3">
+									<!-- <h3 class="fnt-bold text-uppercase">
+										partners
+									</h3>
+									<p>
+										<a href="http://www.rackspace.com">
+											<img style="height:45px;" title="Rackspace" alt="Rackspace" src="http://c15162226.r26.cf2.rackcdn.com/Rackspace_Cloud_Company_Logo_clr_300x109.jpg">
+										</a>
+									</p> -->
+									<h3 class="fnt-bold text-uppercase">
+										partners
+									</h3>
+									<p>
+										<?if($footer_html != ""):?>
+										  <?echo base64_decode($footer_html)?>
+										<?php else:?>
+										  <a href="http://goo.gl/WpfyJC" target="_blank"><img style="border:0px" src="http://referrals.contrib.com/banners/codero-logo-HostingOnDemand.png" width="205" height="58" alt="Dedicated Servers, Cloud and Hybrid Hosting Services " title="Dedicated Servers, Cloud and Hybrid Hosting Services "></a>
+									   <?endif;?>								
+									</p>
+									<h3 class="fnt-bold text-uppercase">
+										Socials
+									</h3>
+									<ul class="list-inline socials-ul">
+										<li>
+											<a title="twitter" class="icon-button twitter" href="">
+												<i class="fa fa-twitter"></i>
+												<span></span>
+											</a>
+										</li>
+										<li>
+											<a title="facebook" class="icon-button facebook" href="">
+												<i class="fa fa-facebook"></i>
+												<span></span>
+											</a>
+										</li>										
+										<li>
+											<a title="linkedin" class="icon-button linkedin" href="">
+												<i class="fa fa-linkedin"></i>
+												<span></span>
+											</a>
+										</li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-dark-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6 f-a-links">
+									© <?php echo date("Y"); ?> <a href="" class="text-capitalize "><?=ucwords($info['domain'])?></a>. All Rights Reserved. 
+								</div>
+								<div class="col-md-6">
+									<ul class="list-inline text-right f-a-links">
+										<li>
+											<a href="/about" class="text-capitalize">
+												<i class="fa fa-bookmark-o"></i>
+												About us
+											</a>
+										</li>
+										<li>
+											<a href="/terms" class="text-capitalize">
+												<i class="fa fa-book"></i>
+												Terms
+											</a>
+										</li>
+										<li>
+											<a href="/privacy" class="text-capitalize">
+												<i class="fa fa-cube"></i>
+												privacy
+											</a>
+										</li>
+										<li>
+											<a href="contactus.php" class="text-capitalize">
+												<i class="fa fa-phone-square"></i>
+												contact us
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                <!-- scroll to top --> 
+                <a href="javascript:;" class="scrollToTop hide"><i class="fa fa-angle-up"></i></a> 
+                <!-- scroll to top end... --> 
         </footer>
+        <!-- end footer -->
 		
-		<input type="hidden" class="image1" id="image1" value="http://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/mountain-bike.jpg">
-		<input type="hidden" class="image2" id="image2" value="http://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/tired-bike.jpg">
+		<?php if ($info_attributes['background_url'] != ""):?>
+		<input type="hidden" class="image1" id="image1" value="<?php echo $info_attributes['background_url']?>">
+		<input type="hidden" class="image2" id="image2" value="<?php echo $info_attributes['background_url']?>">
+		
+		   <?php else:?>
+		   <input type="hidden" class="image1" id="image1" value="https://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/mountain-bike.jpg">
+		   <input type="hidden" class="image2" id="image2" value="https://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/tired-bike.jpg">
+		
+		<?php endif?>
 		<link rel="stylesheet" type="text/css" href="/css/serviceforms/form.css">
 		<style>
 		#form-container .text-error{
@@ -242,8 +582,7 @@
 			});
 			 
 			
-		</script>
-   
+		</script>		
         
     </body>
 </html>

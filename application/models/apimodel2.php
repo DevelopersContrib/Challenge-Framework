@@ -4,7 +4,7 @@ include("simplepie.php");
 
 class ApiModel2 extends Model {
 	
-	private $api_url = "http://api.contrib.com/request/";
+	private $api_url = "http://api2.contrib.co/request/";
 	private $ichallenge_feed_url = "http://ichallenge.com/feed/";
 	private $headers = array('Accept: application/json');
 	

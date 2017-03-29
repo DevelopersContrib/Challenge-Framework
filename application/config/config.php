@@ -37,10 +37,10 @@ function createApiCall($url, $method, $headers, $data = array(),$user=null,$pass
 }
    $api_url = "http://api2.contrib.co/request/";
    $headers = array('Accept: application/json');
-   
-if (!file_exists('config-framework.php')) {
 
-     
+
+if (!file_exists('./config-framework.php')) {
+
     $file = file_get_contents('config-template.php');
     
     $domain = $_SERVER["HTTP_HOST"]."".$_SERVER['REQUEST_URI'];//input sitename without www
@@ -52,13 +52,14 @@ if (!file_exists('config-framework.php')) {
     	$domain = str_replace("www.","",$domain);
     	$key = md5($domain);
     }else {
-       $key = md5('yourdomain.com');
+       $key = md5('vnoc.com');
        $d = explode('~',$domain);
        $user = str_replace('/','',$d[1]);
         $host = $_SERVER["HTTP_HOST"];
 		$host = str_replace("http://","",$host);
 		$host = str_replace("www.","",$host);
 		$url = $api_url.'getdomainbyusername?username='.$user.'&key='.$key.'&host='.$host;
+    
        $result =  createApiCall($url, 'GET', $headers, array());
        $data_domain = json_decode($result,true);
        $error = 0;
@@ -68,21 +69,14 @@ if (!file_exists('config-framework.php')) {
     
     $data_domain = NULL;
     
+ 
     while ($data_domain == NULL){
     
       $url = $api_url.'getdomaininfo?domain='.$domain.'&key='.$key;
       $result = createApiCall($url, 'GET', $headers, array());
       $data_domain = json_decode($result,true);
    } 
-	/*echo "<pre>";
-	
 
-		var_dump($data_domain[0]['DomainId']);
-	
-	echo "</pre>";
-	exit;*/
-    
-   // if ($data_domain['success']){
     	$domainid = $data_domain['data']['DomainId'];
     	$domainname = $data_domain['data']['DomainName'];
     	$memberid = $data_domain['data']['MemberId'];
@@ -92,63 +86,119 @@ if (!file_exists('config-framework.php')) {
     	$account_ga = $data_domain['data']['AccountGA'];
     	$description = stripslashes(str_replace('\n','<br>',$description));
     	
-      $url2 = $api_url.'getdomainattributes?domain='.$domain.'&key='.$key;
-      $result2 = createApiCall($url2, 'GET', $headers, array());
-    	$data_domain2 = json_decode($result2,true);
+	      $url2 = $api_url.'getdomainattributes?domain='.$domain.'&key='.$key;
+	      $result2 = createApiCall($url2, 'GET', $headers, array());
+	      $data_domain2 = json_decode($result2,true);
     	
-	
-     // if($data_domain2['success']){
-    	
-			
-
+	      	$keywords = $data_domain2['data']['keywords'];
 			$color = $data_domain2['data']['template_color'];
 			$intro_title =  stripslashes($data_domain2['data']['intro_title']);
 			$intro_description =  stripslashes($data_domain2['data']['intro_description']);
 			$category = $data_domain2['data']['category'];	
 			$featured_challenge = '';
 			$featured_challenge =  $data_domain2['data']['featured_challenge'];
-			/*$array_counter = count($data_domain2);
-			if($array_counter == 5){
-				$featured_challenge =  $data_domain2[4]['featured_challenge'];
+			
+			if (isset($data_domain2['data']['background_url'])){
+				$background_url = $data_domain2['data']['background_url'];
+			}else {
+				$background_url = "";
 			}
-			if($array_counter == 6){
-				$featured_challenge =  $data_domain2[5]['featured_challenge'];
-			}*/
-			if($featured_challenge==''){ $featured_challenge='222'; }
+			
+            if (isset($data_domain2['data']['footer_html'])){
+				$footer_html = $data_domain2['data']['footer_html'];
+			}else {
+				$footer_html = "";
+			}
 			
 			
-			
+			if($featured_challenge==''){ $featured_challenge='0'; }
 		
-			
-			
-			
-    		
-    		
-    	/*}else{
-    		$error++;
+	if ($featured_challenge != '0'){ 
+  
+    	$info_attributes3 = $api_url.'getFeaturedChallenge?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
+      $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
+    	$data_challenge = json_decode($result3,true);
+  	
+    
+  	if (isset($data_challenge['success'])){
+  		$featured_array = $data_challenge['data'];
+  	}else {
+  		$featured_array = array();
+  	}
+	
+	}else {
+     $featured_array = array();
+  }
+  
+  
+  
+   	if ($featured_challenge != '0'){ 
+	
+    $info_attributes3 = $api_url.'GetChallengeLinks?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
+    $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
+	$data_link = json_decode($result3,true);
+	
+	if (isset($data_link['success'])){
+		$link_array = $data_link['data'];
+	}else {
+		$link_array = array();
+	}
+  
+  }else {
+     $link_array = array();
+  }
+	
+  
+  
+   	if ($featured_challenge != '0'){ 
+	
+    $info_attributes3 = $api_url.'GetChallengeRequirements?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
+    $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
+	$data_req = json_decode($result3,true);
+	
+	if (isset($data_req['success'])){
+		$req_array = $data_req['data'];
+	}else {
+		$req_array = array();
+	}
+  
+  }else {
+     $req_array = array();
+  }
+  
+  
+  	if ($featured_challenge != '0'){ 
+      $info_attributes3 = $api_url.'GetChallengeChallengers?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
+      $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
+    	$data_gers = json_decode($result3,true);
+    	
+    	if (isset($data_gers['success'])){
+    		$gers_array = $data_gers['data'];
+    	}else {
+    		$gers_array = array();
     	}
-    			
-         
-		  
-    }else {
-    	$error++;
-    }*/
 	
-	
-	$info_attributes3 = $api_url.'getFeaturedChallenge?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
-  $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
-	$data_challenge = json_decode($result3,true);
-	
-	$ChallengeId = $data_challenge['data'][0]['ChallengeId'];
-	$ChallengeTitle = $data_challenge['data'][0]['ChallengeTitle'];
-	$ChallengeDesc = $data_challenge['data'][0]['ChallengeDesc'];
-	$EquityPoints = $data_challenge['data'][0]['EquityPoints'];
-	$Slug = $data_challenge['data'][0]['Slug'];
-	$short_desc = $data_challenge['data'][0]['short_desc'];
-	$Photo = $data_challenge['data'][0]['Photo'];
-	$MoreDetails = $data_challenge['data'][0]['MoreDetails'];
-	$Submission_To = $data_challenge['data'][0]['Submission_To'];
-	$remaining_days = $data_challenge['data'][0]['remaining_days'];
+  }else {
+     $gers_array = array();
+  
+  }
+  
+  
+  	if ($featured_challenge != '0'){
+      $info_attributes3 = $api_url.'GetChallengeDiscussions?domain='.$domain.'&key='.$key.'&featured_id='.$featured_challenge;
+      $result3 = createApiCall($info_attributes3, 'GET', $headers, array());
+    	$data_dis = json_decode($result3,true);
+    	
+    	if (isset($data_dis['success'])){
+    		$discussion_array = $data_dis['data'];
+    	}else {
+    		$discussion_array = array();
+    	}
+  
+  }  else {
+      $discussion_array = array();
+  }
+  
 	
 	
 	//-----------------------------------------------------------------------------
@@ -159,13 +209,9 @@ if (!file_exists('config-framework.php')) {
 		$not_featured_sites = json_decode($result_notfeatured,true);
 		
 	
-		
 			
-		
-			$limit = 4;
-			$counter = 0;
-			
-			while($counter < $limit){
+			for ($counter=0;$counter<count($not_featured_sites['data']);$counter++)
+			{
 			
 				$not_featured_sites2[$counter]['ChallengeId'] = $not_featured_sites['data'][$counter]['ChallengeId'];
 				$not_featured_sites2[$counter]['ChallengeTitle'] = $not_featured_sites['data'][$counter]['ChallengeTitle'];
@@ -177,27 +223,12 @@ if (!file_exists('config-framework.php')) {
 				$not_featured_sites2[$counter]['MoreDetails'] = $not_featured_sites['data'][$counter]['MoreDetails'];
 				$not_featured_sites2[$counter]['Submission_To'] = $not_featured_sites['data'][$counter]['Submission_To'];
 				$not_featured_sites2[$counter]['remaining_days'] = $not_featured_sites['data'][$counter]['remaining_days'];
-				$counter++;
+				
 			}
 			
 			
 			
-			/*while($counter < $limit){
-				$not_featured_sites[$counter]['ChallengeId'] = $not_featured_sites[$counter]['ChallengeId'];
-				$not_featured_sites[$counter]['ChallengeTitle'] = $not_featured_sites[$counter]['ChallengeTitle'];
-				$not_featured_sites[$counter]['ChallengeDesc'] = $not_featured_sites[$counter]['ChallengeDesc'];
-				$not_featured_sites[$counter]['EquityPoints'] = $not_featured_sites[$counter]['EquityPoints'];
-				$not_featured_sites[$counter]['Slug'] = $not_featured_sites[$counter]['Slug'];
-				$not_featured_sites[$counter]['short_desc'] = $not_featured_sites[$counter]['short_desc'];
-				$not_featured_sites[$counter]['Photo'] = $not_featured_sites[$counter]['Photo'];
-				$not_featured_sites[$counter]['MoreDetails'] = $not_featured_sites[$counter]['MoreDetails'];
-				$not_featured_sites[$counter]['Submission_To'] = $not_featured_sites[$counter]['Submission_To'];
-				$not_featured_sites[$counter]['remaining_days'] = $not_featured_sites[$counter]['remaining_days'];
-				$counter++;
-			}*/
 		
-		
-	
 	
 	//-----------------------------------------------------------------------------
 	
@@ -216,20 +247,18 @@ if (!file_exists('config-framework.php')) {
 		$result_related_sites = createApiCall($url_related_sites, 'GET', $headers, array());
 		$related_sites = json_decode($result_related_sites,true);
 		
-	
+	    if ((isset($related_sites['success'])) && (count($related_sites) > 0)){
 		
-		if(count($related_sites) > 0){
 		
 			$counter = 0;
 			$limit_related = 4;
 			
-			foreach($related_sites as $related){
+			foreach($related_sites['data'] as $k=>$related){
 				
-				$related_sites2[$counter]['name'] = $related['data'][$counter]['DomainName'];
-				$related_sites2[$counter]['id'] = $related['data'][$counter]['DomainId'];
-				$related_sites2[$counter]['logo'] = $related['data'][$counter]['Logo'];
+				$related_sites2[$counter]['name'] = $related['DomainName'];
+				$related_sites2[$counter]['id'] = $related['DomainId'];
+				$related_sites2[$counter]['logo'] = $related['Logo'];
 				$counter++;
-			
 			}
 			
 		
@@ -298,8 +327,40 @@ if (!file_exists('config-framework.php')) {
     $result = createApiCall($url, 'GET', $headers, array());
     $data_ads = json_decode($result,true);
     $footer_banner = html_entity_decode(base64_decode($data_ads['data']['content']));
-     
 	
+   //get related domains
+	$url = $api_url.'getrelateddomains?domain='.$domain.'&limit=15';
+	$result = createApiCall($url, 'GET', $headers, array());
+	$data_domains = json_decode($result,true);
+	if ($data_domains['success']){
+		$related_domains = $data_domains['data'];
+	}
+ 
+  //get fund campaigns
+	$url = $api_url.'getfundcampaigns';
+	$result = createApiCall($url, 'GET', $headers, array()); 
+	$items = json_decode($result,true);
+	if ($items['success']){
+		$campaigns = $items['data'];
+	}
+     
+	//get micronews
+    $url = $api_url.'getmicronews?domain='.$domain.'&key='.$key.'&limit=3';
+	$result = createApiCall($url, 'GET', $headers, array()); 
+	$news = json_decode($result,true);
+	if ($news['success']){
+		$micronews = $news['data'];
+	}
+
+	// if no keywords presented at domaininfo -> process this
+  if ($keywords == "") {
+      $api1_url = 'http://api1.contrib.co/request/';
+      $url = $api1_url.'DomainKeywords?key='.$key.'&domain='.$domain;
+      $result = createApiCall($url, 'GET', $headers, array());
+      $res_keywords = json_decode($result,true);
+      $keywords = $res_keywords['data']['keywords'];
+  }
+
     //create file
   
    $file = str_replace('{{DOMAIN}}',$domain , $file);
@@ -315,37 +376,33 @@ if (!file_exists('config-framework.php')) {
    $file = str_replace('{{INTRO_TITLE}}',strip_tags($intro_title),$file);
    $file = str_replace('{{SMALL_DESCRIPTION}}',strip_tags($intro_description),$file);
    $file = str_replace('{{CATEGORYID}}',$category,$file);
+   $file = str_replace('{{BACKGROUND_URL}}',$background_url,$file);
    $file = str_replace('{{FOOTER_BANNER}}',$footer_banner, $file);
+   $file = str_replace('{{FOOTER_HTML}}',$footer_html, $file);
   // $file = str_replace('{{HEADER_SCRIPT}}',$header_script,$file);
   // $file = str_replace('{{CUSTOM_HTML}}',$custom_html,$file);
   // $file = str_replace('{{DESC_GRAPHIC}}',$descriptive_graphics_url,$file);
    $file = str_replace('{{FEATURED_CHALLENGE}}',strip_tags($featured_challenge),$file);
    $file = str_replace('{{AFF_LINK}}',$domain_affiliate_link, $file);
-   
-   $file = str_replace('{{CHALLENGE_ID}}',$ChallengeId,$file);
-   $file = str_replace('{{CHALLENGE_TITLE}}',strip_tags($ChallengeTitle),$file);
-   $file = str_replace('{{CHALLENGE_DESC}}',strip_tags($ChallengeDesc),$file);
-   $file = str_replace('{{ECQUITY_POINTS}}',$EquityPoints,$file);
-   $file = str_replace('{{SLUG}}',$Slug,$file);
-   $file = str_replace('{{SHORT_DESC}}',strip_tags($short_desc),$file);
-   $file = str_replace('{{PHOTO}}',$Photo,$file);
-   $file = str_replace('{{MORE_DETAILS}}',strip_tags($MoreDetails),$file);
-   $file = str_replace('{{SUBMISSION_TO}}',$Submission_To,$file);
-   $file = str_replace('{{REMAINING_DAYS}}',$remaining_days,$file);
+   $file = str_replace('{{KEYWORDS}}',$keywords ,$file);
+   $file = str_replace('{{FEATUREDC}}',var_export($featured_array, true), $file);
+   $file = str_replace('{{CDISCUSSIONS}}',var_export($discussion_array, true), $file);
    
    $file = str_replace('{{NOT_FEATURED_SITES}}',var_export($not_featured_sites2, true), $file);
    $file = str_replace('{{RELATED_SITES}}',var_export($related_sites2, true), $file);
    $file = str_replace('{{PARTNERS}}',var_export($partners, true), $file);
    $file = str_replace('{{JOBS}}',var_export($jobs, true), $file);
+   $file = str_replace('{{RELATED_DOMAINS}}',var_export($related_domains, true), $file);
+   $file = str_replace('{{FUND_CAMPAIGNS}}',var_export($campaigns, true), $file);
+   $file = str_replace('{{MICRONEWS}}',var_export($micronews, true), $file);
+   $file = str_replace('{{CLINKS}}',var_export($link_array, true), $file);
+   $file = str_replace('{{CREQUIREMENTS}}',var_export($req_array, true), $file);
+   $file = str_replace('{{CHALLENGERS}}',var_export($gers_array, true), $file);
 
-   
   file_put_contents('config-framework.php', $file);
 }
 
 include "./config-framework.php";
-
-
-  
 	
 if(defined('ENV'))
    //$config['base_url'] = 'http://localhost/challengenew/';

@@ -26,7 +26,7 @@
                                 <li class="col-lg-3">
                                     <div class="row">
                                         <div class="col-lg-12 challengeBoxFeature">
-                                            <a href="http://www.contrib.com/challenge/details/<?=$data['ChallengeId']?>/<?=$data['Slug']?>">
+                                            <a href="/challenge/details/<?=$data['ChallengeId']?>">
                                                 <div class="challengeBoxContent">
                                                     <div class="challengeBoxHeader">
 													  <div class="wrapImgChallengeFtrd">

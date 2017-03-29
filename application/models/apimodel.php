@@ -1,10 +1,10 @@
 <?php
 //include("php_fast_cache.php");
-include("simplepie.php");
+//include("simplepie.php");
 
 class ApiModel extends Model {
 	
-	private $api_url = "http://api.contrib.com/request/";
+	private $api_url = "http://api2.contrib.co/request/";
 	private $ichallenge_feed_url = "http://ichallenge.com/feed/";
 	private $headers = array('Accept: application/json');
 	
@@ -74,6 +74,8 @@ class ApiModel extends Model {
         global $account_ga;
       		global $domain;
           global $piwik_id;
+          global $keywords;
+          		$info['keywords'] = $keywords;
 			  	$info['domainid'] = $domainid;
 		    	$info['domain'] = $domain;
 		    	$info['title'] = $domain_title;
@@ -99,6 +101,7 @@ class ApiModel extends Model {
 		global $custom_html;
 		global $descriptive_graphics_url;
 		global $featured_challenge;
+		global $background_url;
         
 		    	
 		    	
@@ -123,7 +126,8 @@ class ApiModel extends Model {
 				if($info_attributes['intro_title']=='{{INTRO_TITLE}}'){ $info_attributes['intro_title']='Browse and Join Great Challenges'; }
 				if($info_attributes['category']==''){ $info_attributes['category']='4'; }
 				if($info_attributes['featured_challenge']==''){ $info_attributes['featured_challenge']='222'; }
-    
+                $info_attributes['background_url'] =  $background_url;
+				
        return $info_attributes;
 		
 		
@@ -139,29 +143,43 @@ class ApiModel extends Model {
    
    
    
-		global $ChallengeId;
-		global $ChallengeTitle;
-		global $ChallengeDesc ;
-		global	$EquityPoints ;
-		global	$Slug ;
-		global	$short_desc;
-		global	$Photo;
-		global	$MoreDetails;
-		global	$Submission_To;
-		global	$remaining_days;
+		global $featuredc;
+		global $clinks ;
+		global $crequirements;
+    global $challengers;
+		
+		$info['ChallengeId'] = $featuredc[0]['ChallengeId'];
+		$info['ChallengeTitle'] = $featuredc[0]['ChallengeTitle'];
+		$info['ChallengeDesc'] =  $featuredc[0]['ChallengeDesc'];
+		$info['EquityPoints'] =  $featuredc[0]['EquityPoints'];
+		$info['Slug'] = $featuredc[0]['Slug'];
+		$info['short_desc'] = $featuredc[0]['short_desc'];
+		$info['Photo'] = $featuredc[0]['Photo'];
+		$info['MoreDetails'] = $featuredc[0]['MoreDetails'];
+		$info['Submission_To'] = $featuredc[0]['Submission_To'];
+		$info['remaining_days'] = $featuredc[0]['remaining_days'];
+		$info['PrizeDescription'] = $featuredc[0]['PrizeDescription'];
+		$info['Judging_From'] = $featuredc[0]['Judging_From'];
+		$info['Judging_To'] = $featuredc[0]['Judging_To'];
+		$info['Submission_From'] = $featuredc[0]['Submission_From'];
+		$info['Winners_Announced'] = $featuredc[0]['Winners_Announced'];
+		$info['CriteriaDescription'] = $featuredc[0]['CriteriaDescription'];
+		$info['participants'] = $featuredc[0]['participants'];
+		$info['HowToDesc'] = $featuredc[0]['HowToDesc'];
+		$info['HashTag'] = $featuredc[0]['HashTag'];
+		$info['DaysRequired'] = $featuredc[0]['DaysRequired'];
+		$info['Links'] = $clinks;
+		
+		$info_attributes3 = $this->api_url.'GetChallengeRequirements?domain='.$this->getdomain().'&key='.$this->getkey().'&featured_id='.$featuredc[0]['ChallengeId'];
+		
+		$result3 = $this->createApiCall($info_attributes3, 'GET', $this->headers, array());
+		
+		$crequirements = json_decode($result3,true);
 		
 		
+		$info['Requirements'] = $crequirements['data'];
+    $info['Challengers'] = $challengers;
 		
-		$info['ChallengeId'] = $ChallengeId;
-		$info['ChallengeTitle'] = $ChallengeTitle;
-		$info['ChallengeDesc'] =  $ChallengeDesc ;
-		$info['EquityPoints'] = 	$EquityPoints ;
-		$info['Slug'] = $Slug ;
-		$info['short_desc'] = $short_desc;
-		$info['Photo'] =$Photo;
-		$info['MoreDetails'] = $MoreDetails;
-		$info['Submission_To'] = $Submission_To;
-		$info['remaining_days'] = $remaining_days;
 		
 		return $info;
    
@@ -196,19 +214,20 @@ class ApiModel extends Model {
    }
    
 	function getleadscount(){
-			$url = $this->api_url.'getdomainleadscount?domain='.$this->getdomain().'&key='.$this->getkey();
+		    $url = $this->api_url.'Getdomainleadscount?domain='.$this->getdomain().'&key='.$this->getkey();
 			$result = $this->createApiCall($url, 'GET', $this->headers, array());
 			$data_follow_count = json_decode($result,true);
-			 if ($data_follow_count['success']){
-					$leads = ($data_follow_count['data']['leads'] + 1 ) * 25;
-				}else {
-					$leads = 1 * 25;
-			}
-	    return $leads;
+			if (!$data_follow_count['error'])
+		       {
+		       	$follow_count = ($data_follow_count['data']['leads'] + 1 ) * 25;
+		       }else {
+		       	$follow_count = 1 * 25;
+		     }
+	      return $follow_count;
 	}
 	
 	
-	function rollingblog(){
+	/*function rollingblog(){
 		
 		$simplepie = new SimplePie();
 		$simplepie->set_feed_url($this->ichallenge_feed_url);
@@ -218,14 +237,61 @@ class ApiModel extends Model {
 	
 		return $simplepie;
 	
-	}
+	}*/
 	
    function getbanner(){
      global $footer_banner;
 		 return $footer_banner;
 	}
+	
+	function getrelateddomains(){
+		
+		global $related_domains;
+		$domain_verticals = $related_domains;
+		
+		return $domain_verticals;
+		
+	
+	
+	}
+	
+	function getfunding(){
+		
+		global $fund_campaigns;
+		$campains = $fund_campaigns;
+		return $campains;
+		
+	}
+	
+	function getmicronews(){
+		global $micronews;
+		return $micronews;
+	}
    
-   function createrobots(){
+	function getnewsfeeds(){
+	     $url = $this->api_url.'getnewsfeed?domain='.$this->getdomain().'&key='.$this->getkey().'&limit=3';
+         $result =  $this->createApiCall($url, 'GET', $this->headers, array());
+    	 $newfeed = json_decode($result,true);
+    	 if ((isset($newfeed['success'])) && (count($newfeed['data'])>0)){
+    	 	$info = $newfeed['data'];
+    	 }else {
+    	 	$info = array();
+    	 }
+    	 
+    	  return $info;
+	}
+	
+    function getchallengediscussions(){
+		global $cdiscussions;
+		return $cdiscussions;
+	}
+  
+  function getfeaturedid(){
+         global $featured_challenge;
+         return $featured_challenge;
+   }
+   
+	function createrobots(){
 		//	generate robots.txt if not exist
 		$filename = ROOT_DIR .'/robots.txt';
 		//if(!(file_exists($filename))) {
@@ -239,13 +305,6 @@ class ApiModel extends Model {
 		--- END ROBOTS.TXT ----';
 		fwrite($handle, $data);
 	}
-   
-   
-   
-   
-  
-   
-   
    
   
    

@@ -7,48 +7,31 @@
     $domain_title = "{{TITLE}}";
     $logo =  "{{LOGO}}";
     $description = "{{DESCRIPTION}}";
-    $keywords =  "{{KEYWORDS}}";
+    $keywords = "{{KEYWORDS}}";
     $account_ga = "{{ACCOUNT_GA}}";
     $piwik_id = "{{PIWIK_ID}}";
     $domain_affiliate_link = "{{AFF_LINK}}";
-	
-    $description = stripslashes(str_replace('\n','<br>',$description));
-    
-    
+	$description = stripslashes(str_replace('\n','<br>',$description));
     $color = "{{COLOR}}";
     $intro_title = "{{INTRO_TITLE}}";
     $small_description = "{{SMALL_DESCRIPTION}}";
     $categoryid = "{{CATEGORYID}}";
-  
-  
-    
-	$featured_challenge = "{{FEATURED_CHALLENGE}}";
-    
-   
+    $background_url = "{{BACKGROUND_URL}}";
+    $featured_challenge = "{{FEATURED_CHALLENGE}}";
     $footer_banner = "{{FOOTER_BANNER}}" ;
-    
-	$affiliate_id = "{{AFFILIATE_ID}}";
-	
-
-	
-	$ChallengeId = "{{CHALLENGE_ID}}";
-	$ChallengeTitle = "{{CHALLENGE_TITLE}}";
-	$ChallengeDesc =  "{{CHALLENGE_DESC}}";
-	$EquityPoints =  "{{ECQUITY_POINTS}}";
-	$Slug  = "{{SLUG}}";
-	$short_desc = "{{SHORT_DESC}}";
-	$Photo = "{{PHOTO}}";
-	$MoreDetails ="{{MORE_DETAILS}}";
-	$Submission_To = "{{SUBMISSION_TO}}";
-	$remaining_days = "{{REMAINING_DAYS}}";
+    $affiliate_id = "{{AFFILIATE_ID}}";
+    $footer_html = "{{FOOTER_HTML}}";
 	$not_featured = {{NOT_FEATURED_SITES}};
 	$related_sites = {{RELATED_SITES}};
 	$partners = {{PARTNERS}};
 	$jobs = {{JOBS}};
-	
-    
-    
-    
-
-    
+	$related_domains = {{RELATED_DOMAINS}};
+    $fund_campaigns = {{FUND_CAMPAIGNS}};
+    $micronews = {{MICRONEWS}};
+    $featuredc = {{FEATUREDC}};
+    $cdiscussions = {{CDISCUSSIONS}};
+    $clinks = {{CLINKS}};
+    $crequirements = {{CREQUIREMENTS}};
+    $challengers = {{CHALLENGERS}};
+	    
 ?>

@@ -9,7 +9,7 @@
 		<meta http-equiv="content-language" content="en-US">
 		<meta name="title" content="<? echo $info['domain'] ." - ". $info['title']?>">
 		<meta name="description" content="<?echo $info['description']?>">
-		<meta name="keywords" content="">
+		<meta name="keywords" content="<? echo $info['keywords'];?>">
 		<meta name="author" content="">
 		<link rel="canonical" href="http://<?echo $info['domain'].$_SERVER['REQUEST_URI']?>" />
 		<meta name="robots" content="INDEX,FOLLOW">
@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="/css/<?=$info_attributes['color']?>/index.css">
 		<link rel="stylesheet" href="/css/<?=$info_attributes['color']?>/dashboard-challenger.css">
 		<link rel="stylesheet" href="/css/<?=$info_attributes['color']?>/pages.css">
+		<link rel="stylesheet" href="/css/verticals.css">
+		<link rel="stylesheet" href="/css/success.css">
 		
 		
 		 <script>
@@ -51,7 +53,7 @@
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52314a997bb36246"></script>
 		
-		<script src="http://tools.contrib.com/cwidget?d=<?echo $info['domain']?>&p=sb&c=f"></script>
+		<script src="https://tools.contrib.com/cwidget?d=<?echo $info['domain']?>&p=sb&c=f"></script>
 		
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,7 +80,7 @@
 					<? if($info['logo'] == ''): ?>
 					<? echo ucwords($info['domain'])?>
 					<? else: ?>
-                        <img class="logo-menu" src="<?=$info['logo']?>" alt="<?=ucwords($info['domain'])?>" title="<?=ucwords($info['domain'])?>">
+                        <img class="logo-menu" src="<?=$info['logo']?>" alt="<?=ucwords($info['domain'])?>" title="<?=ucwords($info['domain'])?>" style="height:30px">
 					<? endif;?>
                     </a>
 					
@@ -89,14 +91,27 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="http://www.contrib.com/marketplace/challenges" target="_blank"><i class="fa fa-hdd-o"></i> Browse Challenges
+                        <li><a href="https://www.contrib.com/marketplace/challenges" target="_blank"><i class="fa fa-hdd-o"></i> Browse Challenges
 						</a></li>
                         <li><a href="/home/howtosponsor"><i class="fa fa-trophy"></i> Sponsor Challenges</a></li>
+						<li><a href="/blog"><i class="fa fa-comments"></i> Blog</a></li>
+						<li><a href="/home/apps"><i class="fa fa-rocket"></i> Apps</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="http://www.contrib.com/home/signin"><i class="fa fa-sign-in"></i> Login</a></li>
-                        <li><a href="http://referrals.contrib.com/idevaffiliate.php?id=15959&url=http://www.contrib.com/signup/firststep?domain=<?php echo $info['domain']?>"><i class="fa fa-pencil-square-o"></i> Register</a></li>
+                        <li><a href="https://www.contrib.com/home/signin"><i class="fa fa-sign-in"></i> Login</a></li>
+                        <li><a href="https://referrals.contrib.com/idevaffiliate.php?id=15959&url=http://www.contrib.com/signup/firststep?domain=<?php echo $info['domain']?>"><i class="fa fa-pencil-square-o"></i> Register</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
+<style>
+<?php if ($info_attributes['background_url'] != ""):?>
+.wrap-index2{
+    background:url('<?php echo $info_attributes['background_url']?>') no-repeat fixed rgba(0,0,0,0);
+}
+<?php else:?>
+.wrap-index2{
+    background:url('https://rdbuploads.s3.amazonaws.com/backgrounds/bg1-challenge.jpg') no-repeat fixed rgba(0,0,0,0);
+}
+<?php endif?>
+</style>        

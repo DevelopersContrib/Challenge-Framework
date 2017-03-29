@@ -31,20 +31,20 @@
 						 <?=stripslashes($getfeaturedchallenge['ChallengeTitle'])?>
 					</a>
 				</h3>
-				<p class="desc-index2">
+				<div class="desc-index2">
 					 <? 
-						$limit2 = 200;
+						//$limit2 = 200;
 						
 						$feat_chall2 = $getfeaturedchallenge['ChallengeDesc'];
 															
-						if(strlen($feat_chall2) > $limit2){	
-						$feat_chall2 = substr($feat_chall2, 0, strrpos(substr($feat_chall2, 0, $limit),' ')).'...';
-						}
+						//if(strlen($feat_chall2) > $limit2){	
+						//$feat_chall2 = substr($feat_chall2, 0, strrpos(substr($feat_chall2, 0, $limit),' ')).'...';
+						//}
 						
 						echo stripslashes($feat_chall2);
 								
 					?>
-				</p>
+				</div>
 				<br>
 				<div class="progress">
 					<div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar progress-bar-danger">

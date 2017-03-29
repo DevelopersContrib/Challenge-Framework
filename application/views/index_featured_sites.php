@@ -32,6 +32,7 @@
         </div>
     </div>-->
 <? //endif; ?>
+<?  if ($featured_id != '0'):?>
 <div class="row">
     <div class="col-lg-12">
         <br><br>
@@ -41,4 +42,11 @@
     <div class="col-lg-12">
         <script src="http://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>&d=<?=$info['domain']?>"></script>
     </div>
+    <div class="col-lg-12 text-center">
+        <p>
+         <a target="_blank" class="btn btn-danger btn-lg" href="/home/howtosponsor">Sponsor a challenge today!</a>
+        </p>
+   </div>                        
 </div>
+
+<?endif?>
