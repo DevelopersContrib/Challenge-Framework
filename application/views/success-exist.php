@@ -1,5 +1,11 @@
 <?	include('header_index.php'); ?>
-<div class="container">
+<style>
+.success-container {
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+</style>
+<div class="container success-container">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="success-page">

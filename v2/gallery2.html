@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5 IMAGERY</title>
+
+<style type="text/css">
+
+#box {
+	width:660px;
+	
+}
+.box_img {
+	float:left;
+	height:290px;
+	width:210px;
+	
+	border:1px solid #CCC;
+	margin:2px;
+}
+
+.box_img a {
+	color:#000000;
+	text-decoration:none;
+}
+
+.box_img a div {
+	display:none;
+}	
+
+.msg_top {
+	height:25px;
+	width:210px;
+	background-color:#0F3;
+	top:0px;
+	position:relative;
+	overflow:hidden;
+}
+
+.msg_ {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.7em;
+	padding:5px;
+	top:137px;
+	height:118px;
+	position:relative;
+	overflow:hidden;
+}
+
+.box_img:hover  div {
+	display:block;
+	background-color:#39B54A;
+	opacity:0.95;
+
+	
+}
+
+.box_img a .msg_ ._title {
+	font-weight:bold;
+	padding-top:2px;
+	padding-bottom:5px;
+	}
+
+._title {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding-top:5px;
+	padding-left:2px;
+	padding-bottom:5px;
+
+}
+
+</style>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(this).ready(function() {
+	$('.box_img').css('opacity',0.5);
+		
+	$('.box_img').mouseover(function(){
+				$(this).animate({
+					opacity:1,
+					},100,function(){
+						});
+			})
+	
+		$('.box_img').mouseleave(function(){
+				$(this).animate({
+					opacity:0.5,
+					},10,function(){
+						});
+			})
+					
+
+    });
+
+</script>
+
+</head>
+
+<body>
+<div id="box">
+<div class="box_img" style="background-image:url(images/img_01.jpg);">
+	<a title="Ace Infoway India" href="#">
+	<div class="msg_top"><div class="_title">Technology</div></div>
+	<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+	</a>
+</div>
+
+<div class="box_img" style="background-image:url(images/img_02.jpg);">
+	<a title="Ace Infoway India" href="#">
+	<div class="msg_top"><div class="_title">Technology</div></div>
+
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_03.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_04.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_05.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_06.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_07.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<div class="box_img" style="background-image:url(images/img_08.jpg);">
+<a title="Ace Infoway India" href="#">
+<div class="msg_top"><div class="_title">Technology</div></div>
+<div class="msg_"><div class="_title">Lorem & Ipsum {_}</div><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+condimentum.</div></div>
+</a></div>
+
+<!-- end box!-->
+</div>
+</body>
+</html>

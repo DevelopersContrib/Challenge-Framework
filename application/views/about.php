@@ -53,7 +53,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-responsive" src="http://mychallenge.com/images/desc_mychallenge_about.png">
+                        <!-- <img class="img-responsive" title="challenge about" alt="challenges" src="http://mychallenge.com/images/desc_mychallenge_about.png"> -->
                     </div>
                     <div class="col-lg-12">
                         <div class="divider-wrap"></div>

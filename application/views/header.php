@@ -10,8 +10,10 @@
 <meta name="title" content="<?=$info['title']?> " />
 <meta name="description" content="<?=ucwords($info['domain'])?> - <?=$info['description']?>" />
 <meta name="keywords" content="<? echo $info['keywords'];?>" />
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+<meta name="author" content="<?php echo $info['domain']; ?>">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $base_url?>css/custom-lead.css"/>
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $base_url?>css/bootstrap-responsive.css"/>
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $base_url?>js/jquery.counter-analog.css"  />
@@ -27,6 +29,7 @@
 <? }else{ ?>
 	#wrap-lead-bckgrnd{ background: url('http://rdbuploads.s3.amazonaws.com/backgrounds/abstract-desktop-desktop-02.jpg') no-repeat; }
 <? } ?>
+
 </style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -169,14 +169,14 @@ margin-bottom: 15px;
 			  </div>
 			</div>
 		</div>
-		<div class="n-page">
+			<div class="n-page">
 			<div class="apps-container">
-				<div class="text-left">
+				<div class="container text-left">
 					<div class="row">
-					   <a href="http://contrib.com/" target="_blank">
+					   <a href="https://contrib.com/" target="_blank">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="https://contrib.com/" target="_blank"><img class="img-responsive" src="https://www.contrib.com/images/assets/logo-contrib.png" alt="Contrib"></a>
+								<a href="https://contrib.com/" target="_blank"><img alt="Contrib" title="Contrib" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-contrib-R2.png" alt="Contrib"></a>
 							</div>
 							<div class="panel-body">
 									<h4 class="apps-description">
@@ -188,258 +188,259 @@ margin-bottom: 15px;
 						</a>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://socialid.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/contrib/logo-socialid4.png" alt="SocialID"></a>
+								<a href="https://socialid.com/" target="_blank"><img alt="socialid.com" title="socialid.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-socialid4.png" alt="SocialID"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									SocialID establishes media distribution and identification management services on valuable, engaged networks.  Creating value for companies and engaging the targeted user bases.
 								</h4>
 
-									<a class="btn btn-primary btn-block" href="http://socialid.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://socialid.com/">VIEW</a>
 							</div>
 						</div>				
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://handyman.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-handyman-1.png" alt="Handyman"></a>
+								<a href="https://handyman.com/" target="_blank"><img alt="handyman.com" title="handyman.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-handyman-1.png" alt="Handyman"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Find various experienced, and professional contractors in your area.   Efficiently fulfill your home repair or remodel needs and manage your project details online and anytime.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://handyman.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://handyman.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://eservices.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-eservices-1-1.png" alt="Eservices"></a>
+								<a href="https://eservices.com/" target="_blank"><img alt="eservices.com" title="eservices.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-eservices-1-1.png" alt="Eservices"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									The marketplace for quick, paid opportunities by doing small online tasks ordered daily through a curated network of professionals.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://eservices.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://eservices.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://referrals.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/marvinpogi/logo-referrals-beta9-small.png" alt="Referrals" style="background:#333;padding:10px;"></a>
+								<a href="https://referrals.com/" target="_blank"><img alt="referrals.com" title="referrals.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-referrals-header.png" alt="Referrals" style="background:#333;padding:10px;"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Offers a seamless and easy integration into premium brands while expanding distribution turning contacts and community into commerce.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://referrals.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://referrals.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://staffing.com/" target="_blank"><img class="img-responsive" src="https://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-staffing1.png" alt="Staffing"></a>
+								<a href="https://staffing.com/" target="_blank"><img alt="staffing.com" title="staffing.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-staffing1.png" alt="Staffing"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Professional and Curated Talent for short and long term organizational needs and desires.  Remote, value based talent fulfillment with amazing opportunities to earn equity and cash warrants with leading organizations.  
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://staffing.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://staffing.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://www.photostream.com/" target="_blank"><img class="img-responsive" src="http://www.photostream.com/img/logo-photostream.png" alt="Photostream"></a>
+								<a href="https://www.photostream.com/" target="_blank"><img alt="photostream.com" title="photostream.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-photostream.png" alt="Photostream"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">							
 								Shoot, Stream, and Monetize. Import your social photos from popular social networks.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://www.photostream.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://www.photostream.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://micromarkets.com/" target="_blank"><img class="img-responsive" src="http://www.micromarkets.com/images/logo-micromarkets.png" alt="Micromarkets"></a>
+								<a href="https://micromarkets.com/" target="_blank"><img alt="micromarkets.com" title="micromarkets.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-micromarkets.png" alt="Micromarkets"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Post your small service jobs for free. Connect and get paid with thousands of service suppliers from different Micro Markets.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://micromarkets.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://micromarkets.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://domaindirectory.com/" target="_blank"><img class="img-responsive" src="http://www.domaindirectory.com/images/logo-domaindirectory300x82.png" alt="DomainDirectory"></a>
+								<a href="https://domaindirectory.com/" target="_blank"><img alt="domaindirectory.com" title="domaindirectory.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-domaindirectory300x82.png" alt="DomainDirectory"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 								Get the best URL for your website or join partnership opportunities with other related assets.  The right domain name can change your business and life.  We help you find, acquire, sell, build or monetize valuable domain assets. 	
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://domaindirectory.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://domaindirectory.com/">VIEW</a>
 							</div>
 						</div>				
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://venturebook.com/" target="_blank"><img class="img-responsive" src="https://s3.amazonaws.com/assets.zipsite.net/images/2013/logo-VentureBook-3.png" alt="VentureBook"></a>
+								<a href="https://venturebook.com/" target="_blank"><img alt="venturebook.com" title="venturebook.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-VentureBook-3.png" alt="VentureBook"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									The leading venture and equity network for digital assets.  Create Venture Suggestions and proposals with leading and exclusive digital assets.
 		 						</h4>
-									<a class="btn btn-primary btn-block" href="http://venturebook.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://venturebook.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://eshares.com/" target="_blank"><img class="img-responsive" src="https://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-eshares1.png" alt="Eshares"></a>
+								<a href="https://eshares.com/" target="_blank"><img alt="eShares.com" title="eShares.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-eshares1.png" alt="Eshares"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									The leading Equity Management and Marketplace for Technology companies in the digital economy. Join the 1,000's of tech focused companies utilizing eShares.com
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://eshares.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://eshares.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://ifund.com/" target="_blank"><img class="img-responsive" src="http://ifund.com/wp-content/uploads/2013/12/ifund2.png" alt="Ifund"></a>
+								<a href="https://ifund.com/" target="_blank"><img alt="iFund.com" title="iFund.com" class="img-responsive" src="https://cdn.vnoc.com/logos/ifund.png" alt="Ifund"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Is a software as a service collaborative funding platform for premium digital ventures.  iFund is not a registered broker-dealer but offers opportunities to find and learn about great companies.   
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://ifund.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://ifund.com/">VIEW</a>
 							</div>
 						</div>				
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://adrate.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-adrate-3.png" alt="Adrate"></a>
+								<a href="https://adrate.com/" target="_blank"><img alt="adrate.com" title="adrate.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-adrate-3.png" alt="Adrate"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Adrate is a unique AI program for native advertising platform with access to over a Billion placements daily.  Join and let AdRate use our ad technology to make you profits.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://adrate.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://adrate.com/">VIEW</a>
 							</div>
 						</div>				
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://ipartner.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-Ipartner1.png" alt="Ipartner"></a>
+								<a href="https://ipartner.com/" target="_blank"><img alt="iPartner.com" title="iPartner.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-Ipartner1.png" alt="Ipartner"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Gain access to a curated network of strategic partners and expand your user base with the right partner opportunities.  iPartner helps filter and attract the best partners within our premium venture opportunities. Forming a mutually beneficial and benchmarkable partnership outline.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://ipartner.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://ipartner.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://linked.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/marvinpogi/logo-linked4.png" alt="Linked"></a>
+								<a href="https://linked.com/" target="_blank"><img alt="linked.com" title="linked.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-linked4.png" alt="Linked"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Linking people, skills and opportunities to create the world's largest collaborative commerce and business creation system.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://linked.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://linked.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://applications.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-Applications-7.png" alt="Applications"></a>
+								<a href="https://applications.com/" target="_blank"><img alt="applications.com" title="applications.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-Applications-7.png" alt="Applications"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 								Applications is the new way to list and power leading digital assets and make money from your apps.  Sell, Trade and Lease your code using the leading app hosting systems.  Gain access to leading and exclusive scripts that help grow your business.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://applications.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://applications.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://www.esignatures.com/index.html" target="_blank"><img class="img-responsive" src="http://www.esignatures.com/img/esignatures-logo.png" alt="Esignatures" style="background:#B37346;padding:10px;"></a>
+								<a href="https://www.esignatures.com/index.html" target="_blank"><img alt="esignatures.com" title="esignatures.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-esignatures.png" alt="Esignatures" style="background:#B37346;padding:10px;"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Your best practice resource for transforming your business processes to drive efficiency, automation, insight, and action.  Quick and Easy and legally binding while easy management of all your legal documents.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://esignatures.com/index.html">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://esignatures.com/index.html">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://cookboard.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-CookBoard-2.png" alt="CookBoard"></a>
+								<a href="https://cookboard.com/" target="_blank"><img alt="cookboard.com" title="cookboard.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-CookBoard-2.png" alt="CookBoard"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Is the #1 Local Food Marketplace where you can buy and sell food items from your local chefs, local cooks in your community. 
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://cookboard.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://cookboard.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://builderkit.com/" target="_blank"><img class="img-responsive" src="https://s3.amazonaws.com/assets.zipsite.net/images/2013/logo-BuilderKit-1.png" alt="BuilderKit"></a>
+								<a href="https://builderkit.com/" target="_blank"><img alt="builderkit.com" title="builderkit.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-BuilderKit-1.png" alt="BuilderKit"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 								Provides a fast, affordable, high quality business creation and management platform for digital assets. 
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://builderkit.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://builderkit.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://liverep.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-liverep2.png" alt="LiveRep" style="background:#333;padding:10px;"></a>
+								<a href="https://liverep.com/" target="_blank"><img alt="liverep.com" title="liverep.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-liverep2.png" alt="LiveRep" style="background:#333;padding:10px;"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Is a technology gamification company building and managing leading brand platforms. Our scalable, domain based platform creates niche, interactive gaming systems that match sponsors with targeted users creating synergy and engagement. 
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://liverep.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://liverep.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://ichallenge.com/" target="_blank"><img class="img-responsive" src="http://ichallenge.com/logo-ichallenge-2-small.png" alt="Ichallenge"></a>
+								<a href="https://ichallenge.com/" target="_blank"><img alt="ichallenge.com" title="ichallenge.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-ichallenge-2-small.png" alt="Ichallenge"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									Is a technology gamification company building and managing leading assets including MyChallenge, CodeChallenge, SportsChallenge and other great niche locations. Our scalable, domain based platform creates niche, interactive gaming systems that match sponsors with targeted users creating synergy and engagement.  
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://ichallenge.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://ichallenge.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://www.bidtellect.com/" target="_blank"><img class="img-responsive" src="http://bidtellect.com/wp-content/uploads/2015/09/brand.png" alt="Bidtellect" style="background:#51A1C9;"></a>
+								<a href="https://www.bidtellect.com/" target="_blank"><img alt="bidtellect.com" title="bidtellect.com" class="img-responsive" src="https://cdn.vnoc.com/logos/Bidtellect_logoH.png" alt="Bidtellect" style="background:#51A1C9;"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 									The First Open, Multi-format, Multi-device Native Marketing Platform Connecting Advertisers and Publishers to Deliver Optimized and Insightful Native Advertising at Scale.
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://bidtellect.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://bidtellect.com/">VIEW</a>
 							</div>
 						</div>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<a href="http://talentdirect.com/" target="_blank"><img class="img-responsive" src="http://talentdirect.com/Assets/img/logo3.png" alt="TalentDirect"></a>
+								<a href="https://talentdirect.com/" target="_blank"><img alt="talentdirect.com" title="talentdirect.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-tda.png" alt="TalentDirect"></a>
 							</div>
 							<div class="panel-body">
 								<h4 class="apps-description">
 								TalentDirect uses the most updated, modern technology to showcase, schedule and manage talent - making it effortless for any production, film, commercial or promotional event to make their project the best it can be. 
 								</h4>
-									<a class="btn btn-primary btn-block" href="http://talentdirect.com/">VIEW</a>
+									<a class="btn btn-primary btn-block" href="https://talentdirect.com/">VIEW</a>
 							</div>
-						</div>				
-						<div class="panel panel-default">
+						</div>		
+							<div class="panel panel-default">
 								<div class="panel-heading">
-									<a href="http://icontent.com/" target="_blank"><img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-Icontent-2.png" alt="TalentDirect"></a>
+									<a href="https://icontent.com/" target="_blank"><img alt="iContent.com" title="iContent.com" class="img-responsive" src="https://cdn.vnoc.com/logos/logo-Icontent-2.png" alt="TalentDirect"></a>
 								</div>
 								<div class="panel-body">
 									<h4 class="apps-description">
 										Create, publish and make your content viral. 
 									</h4>
-										<a class="btn btn-primary btn-block" href="http://icontent.com/">VIEW</a>
+										<a class="btn btn-primary btn-block" href="https://icontent.com/">VIEW</a>
 								</div>
-							</div>	
+							</div>				
+						
 					</div>
 				</div>
 			</div>

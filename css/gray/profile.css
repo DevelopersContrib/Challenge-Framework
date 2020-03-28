@@ -1,5 +1,5 @@
 .wrap-profile-bckrgrnd{
-    background: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/banner-abstract.png") no-repeat scroll center center #95a5a6;
+    background: url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/banner-abstract.png") no-repeat scroll center center #95a5a6;
     color: #FFFFFF;
     padding: 50px 15px;
 }
@@ -146,10 +146,10 @@
 }
 /* ribbong for statistic*/
 .stat-graph-1{
-    background:url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/ribbon-challenge.png") no-repeat scroll right center transparent;
+    background:url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/ribbon-challenge.png") no-repeat scroll right center transparent;
 }
 .stat-graph-2{
-    background:url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/ribbon-challenge-yellow.png") no-repeat scroll right center transparent;
+    background:url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/ribbon-challenge-yellow.png") no-repeat scroll right center transparent;
 }
 
 .stat-graph-1 span.sub-stat-title {

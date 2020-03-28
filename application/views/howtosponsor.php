@@ -27,7 +27,7 @@
                         <h1 class="hw-sponr-ttle">How to Sponsor Challenges on <span class="domainName"><?=ucwords($info['domain'])?></span></h1>
                         <h3 class="hw-sponr-ttle">Learn how to sponsor and advertise your product or brand on our viral challenges on <?=ucwords($info['domain'])?>.</h3>
                         <p>
-                            <a href="http://www.contrib.com/signup/challenge/sponsor?domain=<?=ucwords($info['domain'])?>" class="btn btn-danger btn-lg" target="_blank">Sponsor a challenge today!</a>
+                            <a href="https://www.contrib.com/signup/challenge/sponsor?domain=<?=ucwords($info['domain'])?>" class="btn btn-danger btn-lg" target="_blank">Sponsor a challenge today!</a>
                         </p>
                     </div>
 					<div class="col-lg-6">
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="blog-text">
                                     <h3 class="ellipsis" title="challenge.com">Register in Contrib</h3>
-                                    <p>The fact that you're already viewing this page mean you would like to sponsor a challenge. Head on to <a href="http://www.contrib.com/signup/challenge/sponsor?domain=<?=ucwords($info['domain'])?>">Sponsor Registration</a> so you can start browsing and sponsoring the challenges 
+                                    <p>The fact that you're already viewing this page mean you would like to sponsor a challenge. Head on to <a href="https://www.contrib.com/signup/challenge/sponsor?domain=<?=ucwords($info['domain'])?>">Sponsor Registration</a> so you can start browsing and sponsoring the challenges 
 									you feel are in sync with your goals. <br><br><br></p>
                                 </div>
                                 <div class="sepertor">
@@ -119,7 +119,7 @@
                     </div>
                      
                     <div class="col-lg-12">
-                        <script src="http://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>"></script>
+                        <script src="https://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>&f=1"></script>
                     </div>
                     <div class="col-lg-12 text-center">
 				        <p>

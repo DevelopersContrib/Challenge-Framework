@@ -36,12 +36,12 @@
                                 <div class="col-lg-8">
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://contrib.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-contrib-green13.png" alt="Contrib.com" />
+                                            <a href="https://contrib.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-contrib-R2.png" alt="Contrib.com" title="contrib.com" />
                                             </a>
                                         </div><!-- col-lg-4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://contrib.com">Contrib.com</a></h3>
+                                            <h3><a href="https://contrib.com">Contrib.com</a></h3>
                                             <p>
                                                 Our network of Contributors power our domains. Browse through our Marketplace of People, Partnerships,Proposals and Brands and find your next great opportunity. Join Free Today.
                                             </p>
@@ -50,12 +50,12 @@
 
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://globalventures.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/lucille/logo-gv-re283x35.png" alt="GlobalVentures.com" />
+                                            <a href="https://globalventures.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-globalventures-hires-dark.png" alt="GlobalVentures.com" title="globalventures.com" />
                                             </a>
                                         </div><!-- col-lg-4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://globalventures.com">GlobalVentures.com</a></h3>
+                                            <h3><a href="https://globalventures.com">GlobalVentures.com</a></h3>
                                             <p>
                                                 Global Ventures owns a premium network of 20,000 websites and powerful tools to help you build successful companies quickly.
                                                 Some of the things we offer you include a great domain name with targeted traffic, unique business model, equity ownership, and flexible, performance based compensation. You just need to bring your knowledge, passion and work smart.
@@ -68,12 +68,12 @@
 
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://ifund.com">
-                                                <img src="http://www.contrib.com/uploads/logo/ifund.png" alt="iFund.com" />
+                                            <a href="https://ifund.com">
+                                                <img src="https://cdn.vnoc.com/logos/ifund.png" alt="iFund.com" title="iFund.com" />
                                             </a>
                                         </div><!-- col-lg-4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://ifund.com">iFund.com</a></h3>
+                                            <h3><a href="https://ifund.com">iFund.com</a></h3>
                                             <p>
                                                 iFund is a software as a service crowdfunding platform. iFund is not a registered broker-dealer and does not offer investment
                                                 advice or advise on the raising of capital through securities offerings. iFund does not recommend or otherwise suggest that any
@@ -85,12 +85,12 @@
 
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://ichallenge.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-ichallenge1.png" alt="iChallenge.com" />
+                                            <a href="https://ichallenge.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-ichallenge1.png" alt="iChallenge.com" title="iChallenge.com" />
                                             </a>
                                         </div><!-- col-lg-4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://ichallenge.com">iChallenge.com</a></h3>
+                                            <h3><a href="https://ichallenge.com">iChallenge.com</a></h3>
                                             <p>
                                                 The best internet challenges. Solve and win online prizes.
                                             </p>
@@ -99,12 +99,12 @@
 								
                                    <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://socialid.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-socialid1.png" alt="SocialId.com" />
+                                            <a href="https://socialid.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-socialid1.png" alt="SocialId.com" title="socialid.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://socialid.com">SocialId.com</a></h3>
+                                            <h3><a href="https://socialid.com">SocialId.com</a></h3>
                                             <p>
                                                 SocialId helps you get the social name for all major social networking websites.
                                             </p>
@@ -113,12 +113,12 @@
                                     
                                       <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://virtualinterns.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-virtualinterns3.png" alt="Virtualinterns.com" />
+                                            <a href="https://virtualinterns.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-virtualinterns3.png" alt="Virtualinterns.com" title="virtualinterns.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://socialid.com">Virtualinterns.com</a></h3>
+                                            <h3><a href="https://socialid.com">Virtualinterns.com</a></h3>
                                             <p>
                                                Join our exclusive community of like minded people on virtualinterns.com
                                             </p>
@@ -127,12 +127,12 @@
                                     
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://referrals.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/marvinpogi/logo-referrals-beta.png" alt="Referrals.com" />
+                                            <a href="https://referrals.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-referrals-header.png" alt="Referrals.com" title="referrals.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://referrals.com">Referrals.com</a></h3>
+                                            <h3><a href="https://referrals.com">Referrals.com</a></h3>
                                             <p>
                                                Most effective Business Referral Program and Tools Available. Find and share referrals locally.
                                             </p>
@@ -141,12 +141,12 @@
 
                                      <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://bidtellect.com">
-                                                <img src="http://www.bidtellect.com/wp-content/uploads/2014/10/logo-nav1-171x53.png" alt="bidtellect.com" />
+                                            <a href="https://bidtellect.com">
+                                                <img src="https://cdn.vnoc.com/logos/Bidtellect_logoH.png" alt="bidtellect.com" title="bidtellect.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://bidtellect.com">Bidtellect.com</a></h3>
+                                            <h3><a href="https://bidtellect.com">Bidtellect.com</a></h3>
                                             <p>
                                               The First Open, Multi-format, Multi-device Native Exchange Connecting Advertisers and Publishers to Deliver Native Advertising at Scale.
                                             </p>
@@ -155,40 +155,27 @@
                                     
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://consultants.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-consultants1.png" alt="consultants.com" />
+                                            <a href="https://consultants.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-consultants4.png" alt="consultants.com" title="consultants.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://consultants.com">Consultants.com</a></h3>
+                                            <h3><a href="https://consultants.com">Consultants.com</a></h3>
                                             <p>
                                               Find a consultant using our global directory. Request a proposal and get quotes. Or are you looking for consulting jobs? See available job openings. Create your consultant profile and get badges for your consultancy.
                                             </p>
                                         </div><!-- span8 -->
                                     </div>
                                     
-                                      <div class="row-fluid blckBckgrnd">
-                                        <div class="col-lg-4">
-                                            <a href="http://domainholdings.com">
-                                                <img src="http://www.domainholdings.com/wp-content/uploads/2014/03/dh-logo-medium-31.png" alt="domainholdings.com" />
-                                            </a>
-                                        </div><!-- span4 -->
-                                        <div class="col-lg-8">
-                                            <h3><a href="http://domainholdings.com">Domainholdings.com</a></h3>
-                                            <p>
-                                              Domain Holdings is an award winning domain brokerage company specializing in premium domain sales and stealth brand acquisitions.
-                                            </p>
-                                        </div><!-- span8 -->
-                                    </div>
 
                                       <div class="row-fluid blckBckgrnd">
                                         <div class="col-lg-4">
-                                            <a href="http://handyman.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/marvinpogi/logo-handyman.png" alt="handyman.com" />
+                                            <a href="https://handyman.com">
+                                                <img src="https://cdn.vnoc.com/logos/logo-handyman.png" alt="handyman.com" title="handyman.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="col-lg-8">
-                                            <h3><a href="http://handyman.com">Handyman.com</a></h3>
+                                            <h3><a href="https://handyman.com">Handyman.com</a></h3>
                                             <p>
                                               Handyman.com is the best place to find a professional contractor.
                                             </p>
@@ -200,7 +187,7 @@
 										<div class="row-fluid blckBckgrnd">
 											<div class="col-lg-4">
 												<a href="<?echo $partner['url']?>">
-													<img src="<?echo $partner['image']?>" alt="<?echo $partner['company_name']?>" />
+													<img src="<?echo $partner['image']?>" alt="<?echo $partner['company_name']?>" title="<?echo $partner['company_name']?>" />
 												</a>
 											</div><!-- col-lg-4 -->
 											<div class="col-lg-8">

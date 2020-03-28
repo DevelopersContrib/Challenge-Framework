@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <img class="img-responsive hide" src="http://www.shakelaw.com/wp-content/uploads/shake_jobs_instagram.jpg">
+            <img class="img-responsive hide" alt="" title="" src="https://www.shakelaw.com/wp-content/uploads/shake_jobs_instagram.jpg">
         </section>
 		
 		
@@ -43,7 +43,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <iframe frameborder="no" style="width:332px;height:480px;border: none;" scrolling="no" src="http://www.contrib.com/forms/staffing/<?=$info['domain']?>"></iframe>
+                        <iframe frameborder="no" style="width:332px;height:480px;border: none;" scrolling="no" src="https://www.contrib.com/forms/staffing/<?=$info['domain']?>"></iframe>
                     </div>
 					
 					
@@ -60,7 +60,7 @@
 								 <div class="col-lg-4">
 									<div class="box-itemOther">
 										<div class="innerBoxItem">
-											<a class="aItemBox" href="http://contrib.com/brand/jobs/<?=$job['domain_name']?>/<?=$job['job_id']?>" target="_blank">
+											<a class="aItemBox" href="https://contrib.com/brand/jobs/<?=$job['domain_name']?>/<?=$job['job_id']?>" target="_blank">
 												<div class="col-lg-12">
 													<h3><?=$job['title']?></h3>
 													<p>

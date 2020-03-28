@@ -4,7 +4,7 @@
     padding: 50px 15px;
     text-align: center;
     color: #fff;
-    background: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/banner-abstract.png") no-repeat scroll center center #95a5a6;
+    background: url("https://cdn.vnoc.com/banner/banner-abstract.png") no-repeat scroll center center #95a5a6;
 }
 .ul-pages-brdcrmbs li.active{
     color: #000;
@@ -174,7 +174,7 @@
 }
 
 .wrap-otherPages{
-    background-image: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/street.jpg");
+    background-image: url("https://cdn.vnoc.com/background/street.jpg");
     background-position: 50% center;
     background-size: cover;
 }
@@ -244,7 +244,7 @@
 }
 .wrap-sub-header.wrap-sub-header-2 {
     background-color: transparent;
-    background-image: url("http://rdbuploads.s3.amazonaws.com/backgrounds/bg-sponsor-hand.jpg");
+    background-image: url("https://cdn.vnoc.com/background/bg-sponsor-hand.jpg");
     background-position: center center;
     background-size: cover;
     text-align: left;

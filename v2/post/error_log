@@ -1,0 +1,6 @@
+[09-Mar-2012 21:07:34] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/earthcha/public_html/includes/function.php on line 101
+[09-Mar-2012 21:07:38] PHP Fatal error:  Call to undefined method DIR_LIB_2::GetChallengesByStr() in /home/earthcha/public_html/v2/post/search_post.php on line 7
+[09-Mar-2012 21:07:42] PHP Fatal error:  Call to undefined method DIR_LIB_2::GetChallengesByStr() in /home/earthcha/public_html/v2/post/search_post.php on line 7
+[13-Mar-2012 00:59:28] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[13-Mar-2012 00:59:36] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[13-Mar-2012 00:59:41] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0

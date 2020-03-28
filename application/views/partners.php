@@ -17,7 +17,7 @@
                     <div style="position:relative;">
                         <div class="animated rotateIn r-d badge-postn">
                             <a href="<?=$domain_affiliate_link;?>" target="_blank" alt="Contrib">
-                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/badge-contrib-3.png">
+                                <img alt="contrib" title="contrib badge" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/badge-contrib-3.png">
                             </a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="span4">
                                             <a href="http://contrib.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-contrib-green13.png" alt="Contrib.com" />
+                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-contrib-green13.png" title="contrib.com" alt="Contrib.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="span8">
@@ -63,7 +63,7 @@
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="span4">
                                             <a href="http://globalventures.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/lucille/logo-gv-re283x35.png" alt="GlobalVentures.com" />
+                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/lucille/logo-gv-re283x35.png" title="globalventures.com" alt="GlobalVentures.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="span8">
@@ -81,7 +81,7 @@
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="span4">
                                             <a href="http://ifund.com">
-                                                <img src="http://www.contrib.com/uploads/logo/ifund.png" alt="iFund.com" />
+                                                <img src="http://www.contrib.com/uploads/logo/ifund.png" alt="iFund.com" title="iFund" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="span8">
@@ -98,7 +98,7 @@
                                     <div class="row-fluid blckBckgrnd">
                                         <div class="span4">
                                             <a href="http://ichallenge.com">
-                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-ichallenge1.png" alt="iChallenge.com" />
+                                                <img src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-ichallenge1.png" alt="iChallenge.com" title="iChallenge.com" />
                                             </a>
                                         </div><!-- span4 -->
                                         <div class="span8">
@@ -119,7 +119,7 @@
 										<div class="row-fluid blckBckgrnd">
 											<div class="span4">
 												<a href="<?echo $partner_detail['url'];?>">
-													<img src="<?echo $partner_detail['image'];?>" alt="<?echo $partner_detail['company_name'];?>">
+													<img src="<?echo $partner_detail['image'];?>" alt="<?echo $partner_detail['company_name'];?>" title="<?echo $partner_detail['company_name'];?>">
 												</a>
 											</div><!-- span4 -->
 											<div class="span8">

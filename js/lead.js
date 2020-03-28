@@ -139,7 +139,7 @@ function submitLead(){
 		return false;
 	}else if(secret != '' && secret != 'undefined' && secret != null){
 		console.log('naa spam uie');
-			window.location.href = '/success/index/';
+			window.location.href = '/success/index/'+encode;
 
 	}else{	
 		
@@ -171,7 +171,7 @@ function submitLead(){
 					if(res.success=='false'){
 						$('#leadcontent').append('<div class=" text-center" id="response" style="background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 10px; padding: 15px 0px;">Something went wrong. Sorry for the inconvenience.</div>');
 					}else if(res.success=='success'){
-						window.location.href = '/success/index/';
+						window.location.href = '/success/index/'+encode;
 					}else{
 						window.location.href = '/success/exists';
 					}
@@ -256,7 +256,9 @@ function submitLead2(){
 						if(res.success=='false'){
 							$('#leadcontent2').append('<div class=" text-center" id="response2" style="background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 10px; padding: 15px 0px;">Something went wrong. Sorry for the inconvenience.</div>');
 						}else if(res.success=='success'){
-							window.location.href = '/success/index/'+res.code;
+
+							window.location.href = '/success/index/'+encode;
+							//console.log(encode);
 						}else{
 							window.location.href = '/success/exists';
 						}

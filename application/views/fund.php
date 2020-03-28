@@ -11,7 +11,7 @@
 								<?if($funds['post_title'] != 'Micro Markets'):?>
 								<li class="col-md-3 odd">
 									<div class="ribbon-wrapper-green"><div class="ribbon-green">Staff Pick</div></div>
-									<img class="img-responsive" src="<?php echo $funds['logo']?>">
+									<img class="img-responsive" src="<?php echo $funds['logo']?>" title="<?php echo $funds['post_title']; ?>" alt="<?php echo $funds['post_title']; ?>">
 									<a href="<?php echo $funds['permalink']?>" class="vlink" target="_blank"><?php echo $funds['post_title']?></a>
 									<p class="vdesc"><?php echo strip_tags($funds['post_content'])?></p>
 									<div class="fund-container">							

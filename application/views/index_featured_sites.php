@@ -8,11 +8,11 @@
 			/*$counter2 = 0; 
 			while($counter2 < count($related_challenges)){?>
                 <div class="col-lg-3 text-center">
-                    <a title="<?echo $related_challenges[$counter2]['DomainName']?>" alt="<?echo $related_challenges[$counter2]['DomainName']?>" class="domainAlready" href="http://<?echo $related_challenges[$counter2]['DomainName']?>" >
+                    <a title="<?echo $related_challenges[$counter2]['DomainName']?>" alt="<?echo $related_challenges[$counter2]['DomainName']?>" class="domainAlready" href="https://<?echo $related_challenges[$counter2]['DomainName']?>" >
                         <div class="wrapDomainAlready">
                             <div class="wrapTextDomain">
 							<? if($related_challenges[$counter2]['Logo'] == ''){?>
-                                <!-- <img class="img-responsive" src="http://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-OctoberChallenge1.png"> -->
+                                <!-- <img class="img-responsive" src="https://d2qcctj8epnr7y.cloudfront.net/images/2013/logo-OctoberChallenge1.png"> -->
                                 <? echo $related_challenges[$counter2]['DomainName'] ?>
 							<? }else{?>
 								<img class="img-responsive" alt="<?echo $related_challenges[$counter2]['DomainName']?>" src="<?echo $related_challenges[$counter2]['Logo'] ?>"> 
@@ -40,7 +40,7 @@
         <br>
     </div>
     <div class="col-lg-12">
-        <script src="http://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>&d=<?=$info['domain']?>"></script>
+        <script src="https://tools.contrib.com/cwidget/sponsor?c=<?echo $info_attributes['featured_challenge']?>&d=<?=$info['domain']?>"></script>
     </div>
     <div class="col-lg-12 text-center">
         <p>

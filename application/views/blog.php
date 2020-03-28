@@ -145,9 +145,9 @@ background: #ccc;
 								<div class="col-md-2">
 								  <a class="blog-title" href="#">
 								  <?php if ($v['profile_image'] == '' || $v['profile_image']==null):?>
-								      <img alt="http://www.contrib.com/people/me/<?php echo $v['Username']?>" src="http://d2qcctj8epnr7y.cloudfront.net/sheina/contrib/default_avatar.png" style="width:100px;height:100px" class="img-circle">
-								      <?php else:?>
-								       <img alt="http://www.contrib.com/people/me/<?php echo $v['Username']?>" src="http://www.contrib.com/uploads/profile/<?php echo $v['profile_image'] ?>" style="width:100px;height:100px" class="img-circle">
+										<img alt="https://www.contrib.com/people/me/<?php echo $v['Username']?>" src="https://cdn.vnoc.com/icons/default-blue-462x462.png" style="width:100px;height:100px" class="img-circle">
+									<?php else:?>
+										<img alt="https://www.contrib.com/people/me/<?php echo $v['Username']?>" src="https://www.contrib.com/uploads/profile/<?php echo $v['profile_image'] ?>" style="width:100px;height:100px" class="img-circle">
 								  <?php endif?>
 								  </a>
 								  <p><?php echo $v['FirstName'].' '.$v['LastName']?></p>
@@ -191,11 +191,19 @@ background: #ccc;
 				<ul class="list-unstyled">
 				  <?php $ri =0;?>
 				   <?php foreach ($related as $k2=>$v2):?>
-				       <?php if ($ri > 3) break;?>
+							 <?php if ($ri > 3) break;?>
+							 <?php
+								if(strpos($v2['Photo'],'cdn.vnoc') < -1) {
+										$pos = strrpos($v2['Photo'],'/');
+										$img = substr($v2['Photo'],$pos);
+								} else {
+										$img = $v2['Photo'];
+								}
+								?>
 				       <li class="col-md-6">
 							<a href=""><h4><?php echo $v2['ChallengeTitle']?></h4></a>
-							<p class="rel-desc"><img class="img-responsive" src="<?php echo $v2['Photo']?>"></p>
-							<p><a href="http://www.contrib.com/challenge/details/<?=$v2['ChallengeId']?>/<?=$v2['Slug']?>" type="button" class="btn btn-success">Join This Challenge</a></p>
+							<p class="rel-desc"><img class="img-responsive" src="https://cdn.vnoc.com/challenge<?php echo $img?>"></p>
+							<p><a href="https://www.contrib.com/challenge/details/<?=$v2['ChallengeId']?>/<?=$v2['Slug']?>" type="button" class="btn btn-success">Join This Challenge</a></p>
 						</li>
 						<?php $ri++?>
 					<?php endforeach;?>
@@ -209,7 +217,7 @@ background: #ccc;
 			<h2><i class="fa fa-newspaper-o"></i>&nbsp;Discussion Newsfeed</h2>
 			<div class="nfbox">
 				
-				    <script src="http://tools.contrib.com/cwidget/newsfeeds/?d=<?php echo $info['domain']?>&l=3"></script>
+				    <script src="https://tools.contrib.com/cwidget/newsfeeds/?d=<?php echo $info['domain']?>&l=3"></script>
 				
 			</div>
 		  </div>

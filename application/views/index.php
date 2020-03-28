@@ -1,4 +1,5 @@
 <?	include('header_index.php'); ?>
+
 <?	include('index_lander.php');?>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -34,7 +35,7 @@
 		});
 	}); 
 </script>
-<script type="text/javascript" src="/js/jquery.newsTicker.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.newsTicker.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         var nt_example2 = $('#nt-example2').newsTicker({
@@ -65,24 +66,13 @@
             nt_example2.newsTicker('unpause');
         });
     });
-</script>
-<?  if ($featured_id != '0'):?>
+</script> -->
 
-<section class="section-2">
-	<div class="container">
-		<?	include('index_main_content.php');?>
-    </div>
-</section>
- 
-<?	
-   include('index_featured_details.php');
-?>
 
-<?endif?>
 
 <section class="section-2">
     <div class="container">
-		<?	include('index_featured_challenges.php');?>
+		<?	//include('index_featured_challenges.php');?>
 	</div>
 </section>
 <!--<section class="section-between-2">
@@ -97,7 +87,7 @@
 		<?	include('index_featured_sites.php');?>
 	</div>
 </section>
-<section class="section-2">
+<section class="section-2 vert-con">
 	<div class="container">
 		<?	include('index_verticals.php');?>
 	</div>

@@ -1,0 +1,112 @@
+/* VIOLET: #68228B */
+
+
+	a { color:#68228B; text-decoration:none;} /*change color here*/
+	a:hover { text-decoration:none;}
+	
+	ul.top-link a:hover{color:#68228B;} /*change color here*/
+	ul.top-link a:hover{text-shadow:color: #000; text-shadow: 2px -2px 3px #000; }
+	ul.top-link li .li-pad-user{color:#68228B;  /*change color here*/
+	text-shadow:color: #000; text-shadow: 2px -2px 3px #000;}
+	
+	.p-info 	{
+	  font-size:12px;
+	}
+	
+	.p-title 	{
+		font-family:'BebasNeueRegular';
+		font-size:24px;
+		color:#68228B; /*change color here*/
+	}
+	
+	.a-info-link {
+		font-weight:bold;
+	}
+
+	.jsection-tab p:first-child{
+		font-weight:bold;
+		text-align:left;
+		color:#CC3300;
+	}
+	
+	.jsection-tab p:last-child {
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight:normal;
+		font-size:12px;
+		text-align:left;
+	}
+	
+	.jsection-tab p a:{
+		color:#68228B; /*change color here*/
+	}
+	
+	.jsection-tab p a:hover {
+		opacity: 0.8;
+	}
+	
+	.jwidth_page {
+		width:100%;
+		min-height:90px;
+		padding-top:35px;color:#fff;
+		background: #68228B; /*change color here*/
+	}
+    .jwidth_page h1{
+		padding-left:30px; color:#fff !important;
+		margin-top: -20px;
+    	text-shadow: 1px 1px 1px #222;
+	}
+	
+	.jcol {
+		float:left;
+		min-width:150px;
+		text-align:left;
+		padding:5px;
+		
+	}
+	.jcol:first-child div	{
+		padding-left:2px;
+		border-right:1px solid #CCC;
+	}
+	.jcol h1 {
+		color:#68228B; /*change color here*/
+	}
+	.jcol h2, h3, h4,h5,  a { 
+		color:#68228B; /*change color here*/
+		text-decoration:none;
+	}
+	.jcol-section  {
+		font-size:12px;
+		font-weight:bold;
+		padding-top:10px;
+		list-style:none;
+		line-height:22px;
+		padding-left:5px;
+		padding-bottom:20px;
+	}
+	.jcol-section a {
+		color:#333333;
+		text-decoration:none;
+	}
+	.jcol-section a:hover {
+		color:#348EBF;
+		text-decoration:none;
+	}
+	.jcol-section-title {
+		font-size:16px;
+		font-weight:bold;
+		color:#348EBF;
+	    border-bottom:1px solid #348EBF;
+	}
+	.jcol p {
+		font-size:12px;
+	}
+	.j-column {
+		font-size:12px;
+		-moz-column-width: 13em; 
+		-webkit-column-width: 13em; 
+		-moz-column-gap: 1em; 
+		-webkit-column-gap: 1em;
+		list-style:square;
+		padding:20px;
+		margin-left:20px;
+	}

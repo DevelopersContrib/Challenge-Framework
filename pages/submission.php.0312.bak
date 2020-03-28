@@ -1,0 +1,75 @@
+<?
+$appid = $_REQUEST['appid'];
+$appname = $dir->GetTableInfo('Applications','AppName','AppId',$appid);
+$appdesc = $dir->GetTableInfo('Applications','AppDesc','AppId',$appid);
+$challengeid = $dir->GetTableInfo('Applications','ChallengeId','AppId',$appid);
+?>
+<style>
+	.gall-big-box{ display:none;}
+	.gall-big-box-active{ display:block;background:#000;}
+  .gall-big-box-active img{border:5px solid #fff;max-height:350px;}
+	.gall-thumb{float:left;opacity:0.5}
+	.gall-thumb:hover{opacity:1;cursor:pointer}
+	.gall-thumb-active{opacity:1}
+	.gall-desc{ width: 580px;float:left;margin-bottom:15px;padding-left:15px;font-size:14px;line-height:18px;color:rgb(128,128,128);}
+	.obj-img{height:400px; max-width:560px}
+	.app-gall-outer{min-height:300px;padding-left:10px}
+	.app-gall-bigbox{width: 580px;padding: 15px;}
+	.app-gall-thumbnail{ width: 580px; height:110px; float:left;margin-left:5px;}
+	.app-gall-thumbnail .thumb-left{ float:left;width:30px;text-align:center;margin-right:20px;padding-top: 20px;}
+	.app-gall-thumbnail a.aquo{ font-size:45px;color:gray;text-decoration:none}
+	.app-gall-thumbnail .thumb-right{ float:right;width:30px;text-align:center;margin-left:20px;padding-top: 30px;}
+</style>
+<br>
+<div id="jcenter-left">
+   <div class="jcenter-inner">
+	<? if($dir->CheckIfExist("SELECT * FROM `Applications` WHERE `AppId` = '".$appid."'") == false){
+					echo "This application does not exist.";
+	}
+	else{ ?>
+					<p class="p-title"><?=$appname?></p>
+					<div class="app-gallery">
+						<?=$dir->GetAppSingle($appid)?>
+						<div class="gall-desc" ><?=$appdesc?></div>
+						<? //if company viewing posted the current challenge, buttons for approval will display
+						if($dir->CheckIfExist("SELECT * FROM `Challenges` WHERE ChallengeId = '".$challengeid."' and `CompanyId` = '".$_SESSION['userid']."' ") == true
+						&& $dir->GetTableInfo('Challenges','Solved','ChallengeId',$challengeid) == '0'){ ?>	
+							<a href="approvesubmission.php?appid=<?=$appid?>" id="approve" class="button-href orange" style="float:right; margin-bottom:20px">Approve</a>	
+						<? } ?>
+					</div>
+	<? } ?>
+	</div>
+</div>
+<div id="jcenter-right">
+   <div class="jcenter-inner">
+	   <ul class="side-list">
+			<li><h4><a href="#">Challenge Sponsor</a></h4></li>
+			<?=$dir->ShowChallengeSponsorDetails($challengeid);	?>
+			<li><h4><a href="#">Other Sponsors</a></h4></li>
+			<?=$dir->ShowSponsorLists();?>
+		</ul>
+	</div><!-- class="jcenter-inner" -->
+</div> 
+<script type="text/javascript">
+			$(document).ready(function (){
+				var cnt = $("#gall-cnt").val();
+				//alert(cnt);
+				for(var i=1;i<=cnt;i++){
+					$("#thumb"+i).click(function(){
+						var x = $(this).attr("id");
+						var y = x.replace('thumb','');
+						//alert(y);
+						for(var j=1;j<=cnt;j++){
+							if(y==j){
+								$("#object"+j).attr("class", "gall-big-box-active");
+								$("#thumb"+j).attr("class", "gall-thumb  gall-thumb-active");
+							}
+							else{
+								$("#object"+j).attr("class", "gall-big-box");
+								$("#thumb"+j).attr("class", "gall-thumb");
+							}
+						}
+					});
+				}
+			});
+</script>

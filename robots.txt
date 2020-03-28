@@ -1,0 +1,6 @@
+---BEGIN ROBOTS.TXT ---
+		User-Agent: *
+		Disallow:
+		
+		Sitemap: http://javapoints.com/sitemap
+		--- END ROBOTS.TXT ----

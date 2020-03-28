@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 /* html {
-    background: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/patternHtml.png") repeat scroll 0 178px #DFDFDF;
+    background: url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/patternHtml.png") repeat scroll 0 178px #DFDFDF;
 } */
 body{
     padding-top: 51px;
-    /* background: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/patternBody.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0); */
+    /* background: url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/patternBody.png")repeat-x scroll 0 0 rgba(0, 0, 0, 0); */
 }
 .brdr{
     border: 1px solid;
@@ -362,7 +363,6 @@ span.user{
     position: relative;
     margin: 0 auto 0;
     width: 230px;
-    pad
 }
 .challengeBoxHeader img{
     border-radius: 0;
@@ -418,7 +418,6 @@ span.user{
 /* Things to edit in css */
 /* Browse Challenge */
 .section-half-1{
-    padding: 50px 0;
     background: #e53f51;
 }
 .aMoreInfo,.aMoreInfo:hover,.aMoreInfo:focus,.aMoreInfo:active{
@@ -477,13 +476,14 @@ span.user{
     border: none;
     max-height: 161px;
 }
-.section-half-1{
-    background-image: url('http://d2qcctj8epnr7y.cloudfront.net/images/jayson/banner-abstract.png');
+.section-half-1 .container{
+    background-image: url('https://d2qcctj8epnr7y.cloudfront.net/images/jayson/banner-abstract.png');
     background-repeat: no-repeat;
     background-position: center;
+    padding: 50px 0;
 }
 .section-between-2{
-    background-image: url("http://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/street.jpg");
+    background-image: url("https://d2qcctj8epnr7y.cloudfront.net/images/jayson/challenge-framework/street.jpg");
     background-position: 50% center;
     background-size: cover;
     background-attachment: fixed;
@@ -495,7 +495,6 @@ span.user{
 }
 .wrap-blogFeatured{
     background: #f8f8f8;
-    height: 
 }
 
 
@@ -801,4 +800,116 @@ p.bTn-mwdth {
 }
 i.icon{
     display:inline-block;
+}
+/* 
+    Move CSS in index_lander.php
+    Jeiseun 10-30-18 
+*/
+.badge-postn{
+    position: absolute;
+    right: 90px;
+    top: 3px;
+    z-index: 10;
+}
+.r-d{
+    animation-delay: 2.5s;
+}
+.rotateIn{
+    animation-name: rotateIn;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.inputBgCstm{
+    height:46px !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .badge-postn{
+        right: 5px;
+    }
+    .animated.rotateIn.r-d.badge-postn img {
+        width: 100px;
+    }
+    .img-index-2{
+        max-width: 100%;
+    }
+    .h1-index2{
+        font-size: 27px;
+    }
+    .aMoreInfo span{
+        font-size: 24px;
+    }
+    .alreadyIn {
+        font-size: 27px;
+    }
+}
+.h1-index2 {
+    color: #5af582;
+    text-shadow: none;
+    font-weight: 600;
+}
+.h2-desc {
+    color: #fff;
+    font-weight: 600;
+}
+.wrap-header-text-index2 {
+    padding: 250px 0 30px;
+}
+
+.sh-intro {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.sh-intro h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+.leadform-container {
+    margin-bottom: 40px;
+}
+.section-half-1{
+    background-size: cover;
+}
+.aMoreInfo span {
+    font-size: 23px;
+    text-shadow: none;
+    font-weight: 600;
+}
+.aMoreInfo .fa {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.bg-overlay {
+    background-color: rgba(8, 11, 1, 0.7);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#leadform .form-control {
+    border: none;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-left, .media > .pull-left {
+    padding-right: 10px;
+}
+.media-right, .media > .pull-right {
+    padding-left: 10px;
+}
+.contrib-task-container .media-heading {
+    margin: 10px;
+}
+.contrib-task-container .media-right .btn-danger {
+    margin-top: 5px;
 }

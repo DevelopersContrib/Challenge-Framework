@@ -43,10 +43,10 @@
                 <div class="row">
 					<div class="col-lg-12">
 						<center>
-							<iframe src="http://referrals.contrib.com/aff_index.php?affiliate=<?echo $info['domain']?>" width="800px" height="800px" scrolling="auto" frameborder="0" seamless></iframe>
+                            <script class="ctb-box" id="referral-script" src="https://www.referrals.com/extension/widget.js?key=<?=$widget_id?>" type="text/javascript"></script>
 						</center>
 					</div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 hide">
                         <h2 class="content-h3 text-center" title="challenge.com">Get <?=ucwords($info['domain'])?> Banners and Make Money</h2>
                         <div class="padd-banner">
                             <div class="banner-main">
@@ -62,7 +62,7 @@
                                         <div class="wrap-bannerLeft">
                                             <p href="" class="aBnnrP ellipsis" style="<!--display:none;-->">
                                                 <!--wellnesschallenge.com-->
-                                                <img class="logo-banners1" src="<?echo $info['logo']?>" alt="<?echo $info['domain']?>">
+                                                <img class="logo-banners1" src="<?echo $info['logo']?>" alt="<?echo $info['domain']?>" title="<?php echo $info['domain']; ?>">
                                             </p>
                                         </div>
                                         <div class="wrap-bannerRight ">
@@ -98,7 +98,7 @@
                                         <div class="wrap-downBanner">
                                             <div class="wrap-contentDown">
                                                 <p href="" class="ellipsis">
-                                                    <img src="<?echo $info['logo']?>" alt="<?echo $info['domain']?>">
+                                                    <img src="<?echo $info['logo']?>" alt="<?echo $info['domain']?>" title="<?php echo $info['domain']; ?>">
                                                 </p>
                                             </div>
                                         </div>
@@ -116,7 +116,6 @@
                 </div>
             </div>
         </section>
-
 <style>
 	textarea{width:100%}
     .padd-banner{
@@ -148,7 +147,7 @@
         margin-bottom: 25px;
     }
     .banner-source{
-        color: #fff;
+        color: #000;
         font-size:18px;
     }
     
@@ -340,7 +339,7 @@
 <style type="text/css">
     /* Add New 2 banner */
     .wrap-allbanner{
-        background: url(http://d2qcctj8epnr7y.cloudfront.net/images/2013/banner-contrib-728x90-1.png)no-repeat scroll;
+        background: url('https://cdn.vnoc.com/banner/banner-contrib-728x90-1.png')no-repeat scroll;
         height: 90px;
         width: 728px;
         position: relative;
@@ -432,7 +431,7 @@
 
     /*Second Bannder*/
     .wrapBanner-2{
-        background: url(http://d2qcctj8epnr7y.cloudfront.net/images/jayson/180x150-1.png) no-repeat scroll;
+        background: url('https://cdn.vnoc.com/banner/180x150-1.png') no-repeat scroll;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;

@@ -35,8 +35,8 @@
 		});
 	}); 
 </script>
-<script type="text/javascript" src="/js/jquery.newsTicker.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript" src="/js/jquery.newsTicker.js"></script> -->
+<!-- <script type="text/javascript">
     $(document).ready(function(){
         var nt_example2 = $('#nt-example2').newsTicker({
             row_height: 60,
@@ -66,7 +66,7 @@
             nt_example2.newsTicker('unpause');
         });
     });
-</script>
+</script> -->
 
 <section class="section-2">
 	<div class="container">

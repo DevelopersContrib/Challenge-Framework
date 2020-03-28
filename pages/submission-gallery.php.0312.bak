@@ -1,0 +1,27 @@
+<?
+$challengeid = $_GET['challengeId'];
+$challengename = $dir->GetTableInfo('Challenges','ChallengeTitle','ChallengeId',$challengeid);
+?>
+<style>
+.submission-gallery{ margin:10px 10px 60px 10px; float:left; height:160px; width:30%; }
+</style>
+<br>
+
+<div id="jcenter-left">
+   <div class="jcenter-inner">
+		<p class="p-title">Application Gallery for <?=$challengename?></p>
+		<p><?=$dir->ShowSubmissions($challengeid);?></p>
+	</div>
+</div>
+
+<div id="jcenter-right">
+   <div class="jcenter-inner">
+	   <ul class="side-list">
+			<li><h4><a href="#">Challenge Sponsor</a></h4></li>
+			<?=$dir->ShowChallengeSponsorDetails($challengeid);	?>
+			<li><h4><a href="#">Other Sponsors</a></h4></li>
+			<?=$dir->ShowSponsorLists();?>
+		</ul>
+	</div><!-- class="jcenter-inner" -->
+</div> 
+

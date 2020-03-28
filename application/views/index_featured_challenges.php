@@ -12,7 +12,7 @@
 <?// echo count($getnotfeatured); ?>
 <?if(count($getnotfeatured) > 0):?>
 		  <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 text-center">
                         <h1><i class="fa fa-star-half-full"></i> Other Related Challenges </h1>
                         <br>
                         <br>
@@ -30,7 +30,15 @@
                                                 <div class="challengeBoxContent">
                                                     <div class="challengeBoxHeader">
 													  <div class="wrapImgChallengeFtrd">
-                                                        <img class="thumbnail img-responsive" src="<?=$data['Photo']?>" title="alt="<?=stripslashes($data['ChallengeTitle'])?>" alt="<?=stripslashes($data['ChallengeTitle'])?>">
+                                                        <?php
+                                                        if(strpos($data['Photo'],'cdn.vnoc') < -1) {
+                                                            $pos = strrpos($data['Photo'],'/');
+                                                            $img = "https://cdn.vnoc.com/challenge".substr($data['Photo'],$pos);
+                                                        } else {
+                                                            $img = $data['Photo'];
+                                                        }
+                                                        ?>
+                                                        <img class="thumbnail img-responsive" src="<?=$img?>" title="alt="<?=stripslashes($data['ChallengeTitle'])?>" alt="<?=stripslashes($data['ChallengeTitle'])?>">
 														</div>
                                                         <div class="challengeBoxDetails">
                                                             <div class="challengeDetailsDays">

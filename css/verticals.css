@@ -1,9 +1,9 @@
 .verb {
-background: #f5f5f5;
-border: 1px solid #ddd;
+/* background: #f5f5f5;
+border: 1px solid #ddd; */
 border-radius: 4px;
 padding: 0px 0px 30px 0px;
-margin-bottom: 30px;
+margin-bottom: 0px;
 }
 .verb .odd a {
 display:block;
@@ -125,4 +125,11 @@ color:#fff;
 .devpage .fa {
 font-size: 40px;
 vertical-align: -5px;
+}
+.vert-con {
+	background: #fafafa;
+	margin-bottom: 0px;
+}
+.simply-scroll-clip {
+	display:none;
 }
